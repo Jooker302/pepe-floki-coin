@@ -1,0 +1,261 @@
+/*  HTML Template */
+
+@media only screen and (max-width: 1340px){
+
+	
+	
+}
+
+@media only screen and (max-width: 1140px){
+	
+	.tparrows{
+		display:none !important;
+	}
+	
+	.counter-section .inner-container{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	.testimonial-section .owl-nav{
+		margin-top:-50px;
+	}
+	
+	.fluid-section-one .content-column .inner-column{
+		padding-right:20px;
+	}
+	
+	.news-block .inner-box .lower-content{
+		padding:20px 10px;
+	}
+	
+	.newsletter-section .inner-container{
+		padding-left:350px;
+	}
+	
+}
+
+@media only screen and (min-width: 768px){
+	
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+	
+}
+
+@media only screen and (max-width: 1023px){
+	
+	.main-header{
+		position:relative;
+	}
+	
+	.main-header .nav-outer{
+		padding-top:0px;
+		width:100%;
+	}
+	
+	.main-menu .navigation > li > a::after{
+		bottom:0px;
+	}
+	
+	.main-header .sticky-header .pull-right{
+		width:100%;
+	}
+	
+	.consult-main-slider-two .title,
+	.consult-main-slider-two h1,
+	.consult-main-slider-two .text{
+		color:#ffffff;
+	}
+	
+	.choose-section .content-column{
+		order:1;
+	}
+	
+	.choose-section .image-column{
+		order:2;
+	}
+	
+	.choose-section .image-column .section-icons .icon-layer-one{
+		left:0% !important;
+	}
+	
+	.choose-section .image-column .inner-column{
+		text-align:center;
+	}
+	
+	.testimonial-section .content-column .inner-column{
+		padding-top:0px;
+	}
+	
+	.testimonial-section .content-column{
+		order:1;
+	}
+	
+	.testimonial-section .image-column{
+		order:2;
+	}
+	
+	.testimonial-section .content-column .text{
+		padding-right:0px;
+	}
+	
+	.testimonial-section{
+		padding-top:0px;
+		padding-bottom:100px;
+	}
+	
+	.testimonial-section .owl-nav{
+		margin:0px;
+		left:0px;
+	}
+	
+	.fluid-section-one .content-column{
+		width:100%;
+	}
+	
+	.fluid-section-one .map-column{
+		position:relative;
+		width:100%;
+		min-height:350px;
+	}
+	
+	.fluid-section-one .content-column .inner-column{
+		max-width:100%;
+	}
+	
+	.fluid-section-one .map-column{
+		float:right;
+	}
+	
+	.newsletter-section .title-box,
+	.fluid-section-one .info-column .column-inner{
+		text-align:center;
+	}
+	
+	.newsletter-section .icon-layer-one{
+		display:none;
+	}
+	
+	.newsletter-section .inner-container{
+		padding:40px 30px;
+	}
+	
+}
+
+@media only screen and (max-width: 767px){
+	
+	.nav-outer .mobile-nav-toggler{
+		display:block;
+	}
+	
+	#navbarSupportedContent{
+		display:block;
+	}
+	
+	.mCSB_inside > .mCSB_container{
+		margin-right:0px;
+	}
+	
+	.main-header .outer-box .nav-btn,
+	.main-menu{
+		display:none;
+	}
+	
+	.main-header .nav-outer{
+		margin-top:-60px;
+	}
+	
+	.consult-main-slider-two h1{
+		font-size:40px;
+	}
+	
+	.feature-block .inner-box{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
+	.main-header .sticky-header .mobile-nav-toggler{
+		display:block;
+		float:right;
+		cursor:pointer;
+		font-size:24px;
+		line-height:1em;
+		padding:20px 0px;
+	}
+	
+	.main-header .sticky-header .pull-right{
+		width:auto;
+	}
+	
+	.choose-block{
+		margin-bottom:20px;
+	}
+	
+	.choose-block .inner-box{
+		text-align:center;
+	}
+	
+	.sec-title h2 br,
+	.team-section .section-icons,
+	.fact-counter .column .inner::before,
+	.fact-counter .column .inner .counter-title br,
+	.choose-block .inner-box .choose-text br{
+		display:none;
+	}
+	
+	.fact-counter .column .inner .counter-title{
+		font-size:18px;
+	}
+	
+	.sec-title h2{
+		font-size:28px;
+	}
+	
+}
+
+@media only screen and (max-width: 599px){
+	
+	.featured-section{
+		padding-top:110px;
+	}
+	
+	.choose-section .image-column .section-icons{
+		display:none;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.sec-title h2,
+	.consult-main-slider-two h1{
+		font-size:24px;
+	}
+	
+	.consult-main-slider-two .text{
+		font-size:14px;
+	}
+	
+	.consult-main-slider-two .video-box span{
+		line-height:48px !important;
+	}
+	
+	.testimonial-section .content-column .text{
+		font-size:16px;
+	}
+	
+	.subscribe-box .form-group{
+		padding-right:0px;
+	}
+	
+	.subscribe-box .form-group button{
+		position:relative;
+		width:100%;
+		margin-top:15px;
+	}
+	
+}

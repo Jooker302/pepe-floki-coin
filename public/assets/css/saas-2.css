@@ -1,0 +1,2812 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+
+1. Global Area 
+2. Header Section
+3. Banner Section
+
+
+22. Responsive Section
+
+=====================================================================*/
+/*=========
+Font load
+===========*/
+@font-face {
+  font-family: GT Walsheim Regular;
+  src: url(../fonts/GTWalsheimProRegular.woff2) format("woff2"), url(GTWalsheimProRegular.woff) format("woff"), url(../fonts/GTWalsheimProRegular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT Walsheim Pro Medium Regular";
+  src: url("../fonts/d4f20dfedfdf197ed0ac52b09bf25551.eot");
+  /* IE9*/
+  src: url("../fonts/d4f20dfedfdf197ed0ac52b09bf25551.eot?#iefix") format("embedded-opentype"), url("../fonts/d4f20dfedfdf197ed0ac52b09bf25551.woff2") format("woff2"), url("../fonts/d4f20dfedfdf197ed0ac52b09bf25551.woff") format("woff"), url("../fonts/d4f20dfedfdf197ed0ac52b09bf25551.ttf") format("truetype"), url("../fonts/d4f20dfedfdf197ed0ac52b09bf25551.svg#GT Walsheim Pro Medium Regular") format("svg");
+}
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url(../fonts/GTWalsheimProBold.woff2) format("woff2"), url(GTWalsheimProBold.woff) format("woff"), url(GTWalsheimProBold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/*=========
+Color Code
+===========*/
+/*global area*/
+/*----------------------------------------------------*/
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: inherit;
+  }
+}
+.xis-saas-body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #526a8b;
+  font-family: "GT Walsheim Regular";
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.ul-li ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ul-li-block ul {
+  margin: 0;
+  padding: 0;
+}
+.ul-li-block ul li {
+  display: block;
+  list-style: none;
+}
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #ffff url("../img/pre.svg") no-repeat center center;
+}
+
+[data-background] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-control:focus,
+button:visited,
+button.active,
+button:hover,
+button:focus,
+input:visited,
+input.active,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+a:hover,
+a:focus,
+a:visited,
+a.active,
+select,
+select:hover,
+select:focus,
+select:visited {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.pera-content p {
+  margin-bottom: 0;
+}
+
+.xis-saas-headline h1,
+.xis-saas-headline h2,
+.xis-saas-headline h3,
+.xis-saas-headline h4,
+.xis-saas-headline h5,
+.xis-saas-headline h6 {
+  margin: 0;
+  font-weight: normal;
+  font-family: "GT Walsheim Pro";
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.background_overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.background_position {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.scrollup {
+  width: 55px;
+  right: 20px;
+  z-index: 5;
+  height: 55px;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  border-radius: 100%;
+  line-height: 55px;
+  background-color: #1189fe;
+}
+.scrollup i {
+  color: #fff;
+}
+
+.xis-saas-section-title h2 {
+  color: #101629;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 470px;
+}
+
+@-webkit-keyframes rightarrow {
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0.4em);
+    opacity: 1;
+  }
+}
+
+@keyframes rightarrow {
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0.4em);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeFromUp {
+  -webkit-animation-name: fadeFromUp;
+  animation-name: fadeFromUp;
+}
+
+.fadeFromRight {
+  -webkit-animation-name: fadeFromRight;
+  animation-name: fadeFromRight;
+}
+
+.fadeFromLeft {
+  -webkit-animation-name: fadeFromLeft;
+  animation-name: fadeFromLeft;
+}
+
+.xis-saas-btn a {
+  z-index: 1;
+  color: #fff;
+  width: 155px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+  font-family: "GT Walsheim Pro Medium Regular";
+  background: -webkit-gradient(linear, right top, left top, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background: linear-gradient(-90deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+  -webkit-box-shadow: -1.04px 4.891px 13px 0px rgba(4, 140, 255, 0.25);
+          box-shadow: -1.04px 4.891px 13px 0px rgba(4, 140, 255, 0.25);
+}
+.xis-saas-btn a i {
+  top: 3px;
+  margin-left: 5px;
+  position: relative;
+}
+.xis-saas-btn a:before {
+  top: 115px;
+  left: -50px;
+  right: -50px;
+  content: "";
+  z-index: -1;
+  height: 160px;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition-duration: 850ms;
+          transition-duration: 850ms;
+  background: -webkit-gradient(linear, left top, right top, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background: linear-gradient(90deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+}
+.xis-saas-btn a:hover:before {
+  top: 0%;
+  left: -70px;
+  right: -70px;
+}
+.xis-saas-btn a:hover i {
+  -webkit-animation: rightarrow 0.6s infinite alternate ease-in-out;
+          animation: rightarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes Glow_animation_1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes Glow_animation_1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes Glow_animation_2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes Glow_animation_2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  75% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes floating {
+  from {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+    transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+@-webkit-keyframes floating {
+  from {
+    -webkit-transform: rotate(0deg) translate(-10px) rotate(0deg);
+    transform: rotate(0deg) translate(-10px) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-10px) rotate(-360deg);
+    transform: rotate(360deg) translate(-10px) rotate(-360deg);
+  }
+}
+/*---------------------------------------------------- */
+/*Header area*/
+/*----------------------------------------------------*/
+.xis-saas-header-section {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding-top: 30px;
+  position: absolute;
+}
+.xis-saas-header-section .navbar-nav {
+  display: inherit;
+}
+.xis-saas-header-section .dropdown {
+  position: relative;
+}
+.xis-saas-header-section .dropdown:hover .dropdown-menu {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.xis-saas-header-section .dropdown:after {
+  top: -1px;
+  color: #e3002a;
+  right: -14px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  color: #fb3275;
+  position: absolute;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.xis-saas-header-section .dropdown li:after {
+  top: 8px;
+  right: 15px;
+}
+.xis-saas-header-section .dropdown-menu {
+  left: 0;
+  top: 52px;
+  z-index: 100;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  min-width: 250px;
+  display: block;
+  border: none;
+  border-radius: 0;
+  position: absolute;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background-color: #fff;
+  background-clip: inherit;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform-origin: center top 0;
+          transform-origin: center top 0;
+  -webkit-box-shadow: 0 13px 18px -8px rgba(0, 0, 0, 0.15), 0 29px 45px 4px rgba(0, 0, 0, 0.08), 0 11px 55px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 13px 18px -8px rgba(0, 0, 0, 0.15), 0 29px 45px 4px rgba(0, 0, 0, 0.08), 0 11px 55px 10px rgba(0, 0, 0, 0.07);
+}
+.xis-saas-header-section .dropdown-menu .dropdown-menu {
+  top: 20px;
+  opacity: 0;
+  left: 250px;
+}
+.xis-saas-header-section .dropdown-menu .dropdown-menu a {
+  font-weight: 600;
+  color: #1a2428;
+}
+.xis-saas-header-section .dropdown-menu .dropdown-menu a:before {
+  display: none;
+}
+.xis-saas-header-section .dropdown-menu li {
+  display: block;
+  margin: 0 !important;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid rgba(228, 228, 228, 0.95);
+}
+.xis-saas-header-section .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.xis-saas-header-section .dropdown-menu li:hover .dropdown-menu {
+  top: 0;
+  opacity: 1;
+}
+.xis-saas-header-section .dropdown-menu a {
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 10px 20px 10px !important;
+  color: #1a2428 !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+.xis-saas-header-section .dropdown-menu a:before {
+  top: 20px;
+  left: 5px;
+  width: 0px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  background-color: #1189fe;
+}
+.xis-saas-header-section .dropdown-menu a:after {
+  display: none;
+}
+.xis-saas-header-section .dropdown-menu a:hover {
+  margin-left: 10px;
+}
+.xis-saas-header-section .dropdown-menu a:hover:before {
+  width: 10px;
+}
+.xis-saas-header-section .logo-2 {
+  display: none;
+}
+
+.xis-saas-main-navigation li {
+  margin: 0px 22px;
+}
+.xis-saas-main-navigation a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.xis-saas-header-cta-btn a {
+  color: #fff;
+  height: 53px;
+  z-index: 1;
+  width: 135px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: #263465;
+}
+.xis-saas-header-cta-btn a:before {
+  top: 115px;
+  left: -50px;
+  right: -50px;
+  content: "";
+  z-index: -1;
+  height: 160px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition-duration: 850ms;
+          transition-duration: 850ms;
+}
+.xis-saas-header-cta-btn a:hover {
+  -webkit-box-shadow: 0px 14px 18px 0px rgba(1, 105, 228, 0.25);
+          box-shadow: 0px 14px 18px 0px rgba(1, 105, 228, 0.25);
+}
+.xis-saas-header-cta-btn a:hover {
+  color: #000;
+}
+.xis-saas-header-cta-btn a:hover:before {
+  top: 0%;
+  left: -70px;
+  right: -70px;
+}
+
+.xis-saas-header-section.sticky-on {
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  position: fixed;
+  padding: 15px 0px;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  background-color: #1189fe;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+.xis-saas-header-section.sticky-on .logo-1 {
+  display: none;
+}
+.xis-saas-header-section.sticky-on .logo-2 {
+  display: block;
+}
+.xis-saas-main-navigation .nav-link {
+  display: inline;
+}
+.xis-saas-main-navigation .nav-link.active {
+  color: #000;
+}
+/*Mobile area*/
+/*----------------------------------------------------*/
+.mobile_logo {
+  top: 10px;
+  left: 15px;
+  display: none;
+  position: absolute;
+}
+
+.mobile_menu_content {
+  top: 0px;
+  bottom: 0;
+  left: -350px;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  width: 310px;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 20px 35px 35px 35px;
+  -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+          box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.mobile_menu_content .mobile-main-navigation {
+  width: 100%;
+}
+.mobile_menu_content .mobile-main-navigation .navbar-nav {
+  width: 100%;
+}
+.mobile_menu_content .dropdown:after {
+  display: none;
+}
+.mobile_menu_content .navbar-nav .dropdown-menu {
+  position: static !important;
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+.mobile_menu_content .mobile-main-navigation .navbar-nav li {
+  width: 100%;
+  display: block;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.mobile_menu_content .mobile-main-navigation .navbar-nav li a {
+  padding: 0;
+  width: 100%;
+  color: #000;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "GT Walsheim Pro";
+  text-transform: uppercase;
+  padding: 10px 30px 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.mobile_menu_content .m-brand-logo {
+  width: 120px;
+  margin: 50px auto;
+}
+
+.mobile_menu_wrap.mobile_menu_on .mobile_menu_content {
+  left: 0px;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.mobile_menu_overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  right: 0%;
+  height: 120vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile_menu_overlay_on {
+  overflow: hidden;
+}
+
+.mobile_menu_wrap.mobile_menu_on .mobile_menu_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile_menu_button {
+  right: 0;
+  top: -38px;
+  z-index: 5;
+  color: #fff;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 38px;
+  position: absolute;
+  text-align: center;
+}
+
+.mobile_menu .mobile-main-navigation .navbar-nav li a:after {
+  display: none;
+}
+.mobile_menu .mobile-main-navigation .dropdown > .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile_menu .mobile_menu_content .mobile-main-navigation .navbar-nav .dropdown-menu {
+  border: none;
+  display: none;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 5px 0px;
+  width: 100%;
+  background-color: transparent;
+}
+.mobile_menu .mobile_menu_content .mobile-main-navigation .navbar-nav .dropdown-menu li {
+  border: none;
+  padding: 0 10px;
+  line-height: 1;
+}
+.mobile_menu .mobile_menu_content .mobile-main-navigation .navbar-nav .dropdown-menu li:hover {
+  background-color: transparent;
+}
+.mobile_menu .mobile_menu_content .mobile-main-navigation .navbar-nav .dropdown-menu li a {
+  color: #000 !important;
+}
+.mobile_menu .mobile_menu_content .mobile-main-navigation .navbar-nav .dropdown-menu li a:hover {
+  color: #1189fe;
+  background-color: transparent;
+}
+.mobile_menu .dropdown {
+  position: relative;
+}
+.mobile_menu .dropdown .dropdown-btn {
+  color: #9397a7;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  height: 30px;
+  padding: 5px 10px;
+}
+.mobile_menu .dropdown .dropdown-btn.toggle-open {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.mobile_menu .mobile_menu_close {
+  color: #d60606;
+  cursor: pointer;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+  position: absolute;
+}
+
+.mobile-search-wrapper {
+  margin-bottom: 30px;
+}
+.mobile-search-wrapper input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.mobile-search-wrapper button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: absolute;
+  background-color: #1189fe;
+}
+
+/*---------------------------------------------------- */
+/*Banner area*/
+/*----------------------------------------------------*/
+.xis-saas-banner-section {
+  padding: 175px 0px 60px;
+  background-position: top;
+  background-size: contain;
+}
+.xis-saas-banner-section .xis-saas-banner-shape1 {
+  top: 15%;
+  right: 15%;
+  -webkit-animation: Glow_animation_2 12s infinite linear alternate;
+          animation: Glow_animation_2 12s infinite linear alternate;
+}
+.xis-saas-banner-section .xis-saas-banner-shape2 {
+  top: 30%;
+  left: 15%;
+  -webkit-animation: Glow_animation_1 12s infinite linear alternate;
+          animation: Glow_animation_1 12s infinite linear alternate;
+}
+
+.xis-saas-banner-text {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.xis-saas-banner-text h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.xis-saas-banner-text p {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 18px;
+  max-width: 550px;
+  padding-bottom: 45px;
+}
+.xis-saas-banner-text .xis-saas-btn a {
+  height: 58px;
+  width: 165px;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 5px;
+  color: #526a8b;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-banner-text .xis-saas-btn a i {
+  margin-left: 8px;
+}
+.xis-saas-banner-text .xis-saas-btn a:hover {
+  color: #fff;
+}
+
+.xis-saas-banner-list {
+  padding-top: 50px;
+}
+.xis-saas-banner-list li {
+  color: #e3e6ed;
+  margin: 0px 15px;
+  position: relative;
+  padding-left: 30px;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-banner-list li:before {
+  top: 0;
+  left: 0;
+  color: #e3e6ed;
+  content: "\f00c";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.xis-saas-banner-img-wrapper {
+  margin: 0 auto;
+  max-width: 890px;
+  padding-top: 90px;
+}
+.xis-saas-banner-img-wrapper .xis-saas-banner-img2 {
+  top: 25px;
+  left: -145px;
+}
+.xis-saas-banner-img-wrapper .xis-saas-banner-img3 {
+  right: -140px;
+  bottom: 60px;
+}
+
+/*---------------------------------------------------- */
+/*Sponsor area*/
+/*----------------------------------------------------*/
+.xis-saas-sponsor-slider .xis-saas-sponsor-item {
+  padding: 0px 15px;
+  text-align: center;
+}
+.xis-saas-sponsor-slider .xis-saas-sponsor-item img {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+.xis-saas-sponsor-slider .xis-saas-sponsor-item img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+/*---------------------------------------------------- */
+/*About area*/
+/*----------------------------------------------------*/
+.xis-saas-about-section {
+  padding: 110px 0px 160px;
+}
+
+.xis-saas-about-img-wrapper {
+  margin-top: 80px;
+}
+.xis-saas-about-img-wrapper .xis-saas-about-img1 {
+  left: -210px;
+}
+.xis-saas-about-img-wrapper .xis-saas-about-img2 {
+  top: 40px;
+  right: 40px;
+}
+.xis-saas-about-img-wrapper .xis-saas-about-img3 {
+  right: 40px;
+  bottom: -30px;
+}
+
+.xis-saas-about-feature-wrapper {
+  padding-right: 100px;
+  padding: 55px 0px 25px;
+}
+
+.xis-saas-about-content {
+  z-index: 1;
+}
+
+.xis-saas-about-shape {
+  top: 15px;
+  left: 25px;
+  z-index: -1;
+}
+
+.xis-saas-about-feature-item {
+  width: 50%;
+  max-width: 245px;
+  margin-bottom: 25px;
+}
+.xis-saas-about-feature-item .xis-saas-inner-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  margin-right: 15px;
+  background-image: linear-gradient(-108deg, rgba(255, 165, 0, 0.17) 0%, rgba(254, 110, 48, 0.17) 51%, rgba(253, 54, 96, 0.17) 100%);
+}
+.xis-saas-about-feature-item .xis-saas-inner-text {
+  max-width: 185px;
+}
+.xis-saas-about-feature-item .xis-saas-inner-text h3 {
+  color: #101629;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.xis-saas-about-funfact-item {
+  width: 210px;
+  padding: 25px 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: -0.994px 18.974px 32px 0px rgba(0, 32, 81, 0.1);
+          box-shadow: -0.994px 18.974px 32px 0px rgba(0, 32, 81, 0.1);
+}
+.xis-saas-about-funfact-item .funfact-counter {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background-image: linear-gradient(-180deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+  -webkit-box-shadow: -1.04px 4.891px 13px 0px rgba(4, 129, 255, 0.18);
+          box-shadow: -1.04px 4.891px 13px 0px rgba(4, 129, 255, 0.18);
+}
+.xis-saas-about-funfact-item .funfact-counter h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-about-funfact-item .funfact-counter h3 span {
+  top: 0px;
+  line-height: 1;
+  position: relative;
+}
+.xis-saas-about-funfact-item p {
+  color: #101629;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-about-funfact-item:nth-child(2) .funfact-counter {
+  background-image: linear-gradient(-108deg, #fd3277 0%, #fe749c 51%, #ffb5c1 100%);
+  -webkit-box-shadow: -0.262px 4.993px 18px 0px rgba(253, 66, 128, 0.18);
+          box-shadow: -0.262px 4.993px 18px 0px rgba(253, 66, 128, 0.18);
+}
+.xis-saas-about-funfact-item:nth-child(3) .funfact-counter {
+  background-image: linear-gradient(-108deg, #ff940e 0%, #fe6638 51%, #fd3761 100%);
+  -webkit-box-shadow: -0.994px 18.974px 18px 0px rgba(255, 137, 24, 0.18);
+          box-shadow: -0.994px 18.974px 18px 0px rgba(255, 137, 24, 0.18);
+}
+
+/*---------------------------------------------------- */
+/*Set Up area*/
+/*----------------------------------------------------*/
+.xis-saas-setup-section {
+  padding: 130px 0px 150px;
+}
+.xis-saas-setup-section .xis-saas-section-title h2 {
+  color: #fff;
+  margin: 0 auto;
+}
+
+.xis-saas-setup-item:after {
+  top: 25px;
+  height: 1px;
+  content: "";
+  width: 240px;
+  right: -130px;
+  position: absolute;
+  background-color: #282e3f;
+}
+.xis-saas-setup-item span {
+  z-index: 1;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  overflow: hidden;
+  line-height: 55px;
+  position: relative;
+  border-radius: 100%;
+  margin-bottom: 18px;
+  border-radius: 100%;
+}
+.xis-saas-setup-item span:before, .xis-saas-setup-item span:after {
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(-108deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+}
+.xis-saas-setup-item span:after {
+  top: 2px;
+  left: 2px;
+  width: 51px;
+  z-index: -1;
+  height: 51px;
+  border-radius: 100%;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  background-image: linear-gradient(-108deg, #101629 0%, #101629 51%, #101629 100%);
+}
+.xis-saas-setup-item p {
+  color: #a3a5b1;
+}
+.xis-saas-setup-item:hover span:after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.xis-saas-setup-content {
+  padding-top: 60px;
+}
+.xis-saas-setup-content .col-lg-4:last-child .xis-saas-setup-item:after {
+  display: none;
+}
+
+.xis-saas-setup-download {
+  padding-top: 95px;
+}
+.xis-saas-setup-download p {
+  color: #fff;
+  padding-bottom: 15px;
+}
+.xis-saas-setup-download .xis-saas-download-btn a {
+  margin: 0px 13px;
+}
+
+/*---------------------------------------------------- */
+/*Feature area*/
+/*----------------------------------------------------*/
+.xis-saas-feature-section {
+  padding-top: 150px;
+}
+.xis-saas-feature-section .xis-saas-feature-shape1 {
+  top: -15px;
+  left: 0;
+  width: 20%;
+}
+
+.xis-saas-feature-img-wrapper {
+  margin-top: 90px;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img2 {
+  left: 0;
+  top: -60px;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img3 {
+  top: -85px;
+  left: 50px;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img5 {
+  top: -110px;
+  right: 160px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img4 {
+  top: -25px;
+  right: 40px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 12s;
+  -webkit-animation-duration: 10s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img6 {
+  top: 60px;
+  left: 20px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 10s;
+  -webkit-animation-duration: 14s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-feature-img-wrapper .xis-saas-feature-img7 {
+  left: 0;
+  right: -100px;
+  bottom: -10px;
+  margin: 0 auto;
+  text-align: center;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 10s;
+  -webkit-animation-duration: 16s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.xis-saas-feature-text-wrapper {
+  padding-left: 50px;
+}
+.xis-saas-feature-text-wrapper .xis-saas-feature-text {
+  max-width: 350px;
+  padding-top: 30px;
+}
+.xis-saas-feature-text-wrapper .xis-saas-feature-list {
+  margin-top: 28px;
+  margin-bottom: 45px;
+}
+.xis-saas-feature-text-wrapper .xis-saas-feature-list li {
+  padding-left: 25px;
+  position: relative;
+}
+.xis-saas-feature-text-wrapper .xis-saas-feature-list li:before {
+  top: 0;
+  left: 0;
+  color: #0190ff;
+   content: "\f00c";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.xis-saas-feature-section2 {
+  padding-top: 90px;
+}
+.xis-saas-feature-section2 .xis-saas-feature-shape2 {
+  right: 0;
+  bottom: 0;
+}
+.xis-saas-feature-section2 .xis-saas-feature-shape3 {
+  top: -80px;
+  right: 100px;
+  -webkit-animation: Glow_animation_2 12s infinite linear alternate;
+          animation: Glow_animation_2 12s infinite linear alternate;
+}
+.xis-saas-feature-section2 .xis-saas-feature-shape4 {
+  top: 40%;
+  left: 150px;
+  -webkit-animation: Glow_animation_1 12s infinite linear alternate;
+          animation: Glow_animation_1 12s infinite linear alternate;
+}
+
+.xis-saas-feature-img-wrapper-2 {
+  margin-right: 100px;
+}
+.xis-saas-feature-img-wrapper-2 .xis-saas-feature-img2 {
+  top: 20px;
+  right: -10px;
+}
+.xis-saas-feature-img-wrapper-2 .xis-saas-feature-img4 {
+  top: 5px;
+  right: 40px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 10s;
+  -webkit-animation-duration: 16s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-feature-img-wrapper-2 .xis-saas-feature-img3 {
+  top: 55px;
+  left: 105px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 12s;
+  -webkit-animation-duration: 16s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-feature-img-wrapper-2 .xis-saas-feature-img5 {
+  right: -20px;
+  bottom: 35px;
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  animation-duration: 14s;
+  -webkit-animation-duration: 16s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+/*---------------------------------------------------- */
+/*Service area*/
+/*----------------------------------------------------*/
+.xis-saas-service-section {
+  overflow: hidden;
+  padding: 215px 0px 130px;
+}
+.xis-saas-service-section .xis-saas-service-top-content {
+  z-index: 2;
+}
+
+.xis-saas-service-top-content .xis-saas-section-title {
+  margin-right: 135px;
+  max-width: 300px;
+}
+.xis-saas-service-top-content .xis-saas-section-title h2 {
+  line-height: 1.042;
+}
+
+.xis-saas-service-title-text {
+  color: #526a8b;
+  padding-top: 20px;
+  max-width: 490px;
+}
+
+.xis-saas-service-img {
+  margin-right: 10px;
+}
+.xis-saas-service-img li {
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+.xis-saas-service-img li .testi-img {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: -18px;
+  border-radius: 100%;
+  display: inline-block;
+  border: 3px solid #fff;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+}
+
+.xis-saas-service-more {
+  padding: 80px 0px 25px;
+}
+.xis-saas-service-more .xis-saas-service-more-btn a {
+  z-index: 2;
+  color: #526a8b;
+  font-size: 14px;
+  position: relative;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-service-more .xis-saas-service-more-btn a:before {
+  left: 0;
+  width: 0%;
+  bottom: 0;
+  height: 1px;
+  content: "";
+  position: absolute;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  background-color: #526a8b;
+}
+.xis-saas-service-more .xis-saas-service-more-btn a:hover:before {
+  width: 100%;
+}
+
+.xis-saas-service-item {
+  width: 265px;
+  margin: 0px 15px;
+  overflow: hidden;
+  border-radius: 75px;
+  padding: 45px 35px 30px;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-service-item .xis-saas-service-icon {
+  margin-bottom: 22px;
+}
+.xis-saas-service-item .xis-saas-service-icon i {
+  font-size: 45px;
+  line-height: 0.75;
+  background: -webkit-gradient(linear, right top, left top, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background: linear-gradient(-90deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.xis-saas-service-item .xis-saas-service-text {
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-service-item .xis-saas-service-text h3 {
+  color: #101629;
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+.xis-saas-service-item .xis-saas-service-text p {
+  opacity: 0;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-service-item .xis-saas-service-text .service_more_btn {
+  opacity: 0;
+  margin-top: 20px;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-service-item .xis-saas-service-text .service_more {
+  width: 45px;
+  color: #fff;
+  height: 45px;
+  line-height: 1;
+  border-radius: 100%;
+  background-image: linear-gradient(-108deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+  -webkit-box-shadow: -1.04px 4.891px 13px 0px rgba(4, 129, 255, 0.18);
+          box-shadow: -1.04px 4.891px 13px 0px rgba(4, 129, 255, 0.18);
+}
+.xis-saas-service-item:hover {
+  background-color: #fff;
+  -webkit-box-shadow: -1.04px 4.891px 51px 0px rgba(6, 17, 59, 0.14);
+          box-shadow: -1.04px 4.891px 51px 0px rgba(6, 17, 59, 0.14);
+}
+.xis-saas-service-item:hover .xis-saas-service-text p {
+  opacity: 1;
+}
+.xis-saas-service-item:hover .xis-saas-service-text .service_more_btn {
+  opacity: 1;
+}
+
+.xis-saas-service-slider .slick-list {
+  padding: 60px;
+  margin: -60px;
+}
+.xis-saas-service-slider .slick-slide {
+  opacity: 0;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-service-slider .slick-slide.slick-active {
+  opacity: 1;
+}
+
+.xis-saas-service-slider-wrapper {
+  z-index: 1;
+}
+.xis-saas-service-slider-wrapper:before {
+  right: 0;
+  z-index: -1;
+  top: -220px;
+  content: "";
+  width: 900px;
+  height: 480px;
+  position: absolute;
+  border-radius: 70px;
+  background-color: #f3f3f5;
+}
+.xis-saas-service-slider-wrapper .slick-dots {
+  top: 80px;
+  left: -300px;
+  bottom: auto;
+  width: inherit;
+}
+.xis-saas-service-slider-wrapper .slick-dots button {
+  padding: 0;
+  width: inherit;
+  height: inherit;
+}
+.xis-saas-service-slider-wrapper .slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #d0d5dc;
+}
+.xis-saas-service-slider-wrapper .slick-dots li.slick-active {
+  background-color: #20395c;
+}
+.xis-saas-service-slider-wrapper .slick-dots li button:before {
+  display: none;
+}
+.xis-saas-service-slider-wrapper .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+/*---------------------------------------------------- */
+/*Testimonial area*/
+/*----------------------------------------------------*/
+@keyframes Xis_Digital_Anim_1 {
+  0% {
+    -webkit-transform: translate(-300px, 151px) rotate(0);
+            transform: translate(-300px, 151px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(251px, -200px) rotate(180deg);
+            transform: translate(251px, -200px) rotate(180deg);
+  }
+}
+@-webkit-keyframes Xis_Digital_Anim_1 {
+  0% {
+    -webkit-transform: translate(-300px, 151px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(251px, -200px) rotate(180deg);
+  }
+}
+@keyframes Xis_Digital_Anim_2 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+            transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(111px, 72px) rotate(72deg);
+            transform: translate(111px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(93px, 122px) rotate(108deg);
+            transform: translate(93px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-70px, 72px) rotate(124deg);
+            transform: translate(-70px, 72px) rotate(124deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+}
+@-webkit-keyframes Xis_Digital_Anim_2 {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(111px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(124deg);
+  }
+  100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+  }
+}
+.xis-saas-testimonial-section {
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.xis-saas-testimonial-section .xis-saas-section-title h2 {
+  max-width: 100%;
+}
+.xis-saas-testimonial-section .xis-saas-testi-shape1 {
+  left: 0;
+  bottom: 0;
+}
+.xis-saas-testimonial-section .xis-saas-testi-shape2 {
+  top: 0;
+  right: 0;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle1 {
+  top: 0%;
+  right: 0;
+  -webkit-animation: Xis_Digital_Anim_1 20s infinite linear alternate;
+          animation: Xis_Digital_Anim_1 20s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle2 {
+  top: 35%;
+  right: 15%;
+  -webkit-animation: Xis_Digital_Anim_2 12s infinite linear alternate;
+          animation: Xis_Digital_Anim_2 12s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle3 {
+  top: 20%;
+  left: 5%;
+  -webkit-animation: Xis_Digital_Anim_1 12s infinite linear alternate;
+          animation: Xis_Digital_Anim_1 12s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle4 {
+  bottom: 20%;
+  left: -15%;
+  -webkit-animation: Xis_Digital_Anim_2 25s infinite linear alternate;
+          animation: Xis_Digital_Anim_2 25s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle5 {
+  top: 10%;
+  right: 0;
+  -webkit-animation: Xis_Digital_Anim_1 27s infinite linear alternate;
+          animation: Xis_Digital_Anim_1 27s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle6 {
+  top: 15%;
+  left: 15%;
+  -webkit-animation: Xis_Digital_Anim_2 29s infinite linear alternate;
+          animation: Xis_Digital_Anim_2 29s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle7 {
+  top: 45%;
+  left: 5%;
+  -webkit-animation: Xis_Digital_Anim_1 31s infinite linear alternate;
+          animation: Xis_Digital_Anim_1 31s infinite linear alternate;
+}
+.xis-saas-testimonial-section .xis-saas-testi-circle8 {
+  bottom: 30%;
+  right: -15%;
+  -webkit-animation: Xis_Digital_Anim_2 33s infinite linear alternate;
+          animation: Xis_Digital_Anim_2 33s infinite linear alternate;
+}
+
+.xis-saas-testimonial-ratting {
+  margin-top: 25px;
+}
+.xis-saas-testimonial-ratting li {
+  color: #ffa352;
+}
+
+.xis-saas-testimonial-slider-wrapper .carousel-inner {
+  margin-top: 80px;
+}
+
+.xis-sass-testimonial-inner-item .xis-sass-author-img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author-img img {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author-img:before, .xis-sass-testimonial-inner-item .xis-sass-author-img:after {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 275px;
+  height: 275px;
+  opacity: 0.059;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #051936;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author-img:after {
+  width: 395px;
+  height: 395px;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author-img:before {
+  top: 60px;
+  left: 60px;
+}
+.xis-sass-testimonial-inner-item .xis-sass-testi-text {
+  top: -100px;
+  margin: 0 auto;
+  max-width: 560px;
+  border-radius: 60px;
+  background-color: #fff;
+  padding: 60px 30px 60px 30px;
+  -webkit-box-shadow: 0.872px 24.985px 51px 0px rgba(6, 17, 59, 0.1);
+          box-shadow: 0.872px 24.985px 51px 0px rgba(6, 17, 59, 0.1);
+}
+.xis-sass-testimonial-inner-item .xis-sass-testi-text p {
+  color: #526a8b;
+  line-height: 1.75;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author {
+  margin-top: 25px;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author h3 {
+  color: #20395c;
+  font-size: 24px;
+  font-weight: 700;
+}
+.xis-sass-testimonial-inner-item .xis-sass-author span {
+  color: #9aadc7;
+}
+
+.xis-saas-testimonial-content .xis-saas-testi-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.xis-saas-testimonial-content .carousel-indicators {
+  margin: 0;
+  top: 50%;
+  display: inherit;
+  position: static;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+}
+.xis-saas-testimonial-content .carousel-control-next, .xis-saas-testimonial-content .carousel-control-prev {
+  opacity: 1;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  display: block;
+  z-index: 5;
+  line-height: 45px;
+  color: #526a8b;
+  overflow: hidden;
+  margin: 0px 5px;
+  border-radius: 100%;
+  position: relative;
+  background-color: #ecf2fa;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-testimonial-content .carousel-control-next:before, .xis-saas-testimonial-content .carousel-control-prev:before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: linear-gradient(-108deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+}
+.xis-saas-testimonial-content .carousel-control-next:hover, .xis-saas-testimonial-content .carousel-control-prev:hover {
+  color: #fff;
+}
+.xis-saas-testimonial-content .carousel-control-next:hover:before, .xis-saas-testimonial-content .carousel-control-prev:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.xis-saas-testimonial-content .carousel-control-prev-icon,
+.xis-saas-testimonial-content .carousel-control-next-icon {
+  background-image: none;
+}
+.xis-saas-testimonial-content .carousel-indicators [data-target] {
+  margin: 0;
+  padding: 0;
+  width: 65px;
+  height: 65px;
+  text-indent: 0;
+  border: none;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  border-radius: 100%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.xis-saas-testimonial-content .carousel-indicators .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: 75px;
+  height: 75px;
+}
+.xis-saas-testimonial-content .carousel-indicators button:nth-child(1) {
+  left: 5%;
+  top: -90%;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-testimonial-content .carousel-indicators button:nth-child(2) {
+  right: 10%;
+  top: -70%;
+  animation-duration: 12s;
+  -webkit-animation-duration: 12s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.xis-saas-testimonial-content .carousel-indicators button:nth-child(3) {
+  top: -25%;
+  left: 15%;
+  animation-duration: 11s;
+  -webkit-animation-duration: 11s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.xis-saas-testimonial-content .carousel-indicators button:nth-child(4) {
+  left: 5%;
+  top: 50%;
+  animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.xis-saas-testimonial-content .carousel-indicators button:nth-child(5) {
+  top: -15%;
+  right: 0%;
+  animation-duration: 7s;
+  -webkit-animation-duration: 7s;
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+.xis-saas-testimonial-content .carousel-indicators button:nth-child(6) {
+  right: 15%;
+  top: 50%;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.xis-sass-testimonial-carousel-icon {
+  left: 0;
+  right: 0;
+  bottom: 77px;
+}
+
+/*---------------------------------------------------- */
+/*Blog area*/
+/*----------------------------------------------------*/
+.xis-saas-blog-section {
+  overflow: hidden;
+  padding: 140px 0px 125px;
+}
+.xis-saas-blog-section .progress {
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 110px 0px 25px;
+  background-color: #e6e6e6;
+  background-image: -webkit-gradient(linear, left top, right top, from(black), to(black));
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.4s ease-in-out;
+  transition: background-size 0.4s ease-in-out;
+}
+.xis-saas-blog-section .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(-108deg, #fd3277 0%, #fe749c 51%, #ffb5c1 100%);
+}
+.xis-saas-blog-section .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.xis-saas-blog-top-content .xis-saas-section-title h2 {
+  max-width: 570px;
+}
+.xis-saas-blog-top-content .xis-saas-blog-top-text {
+  max-width: 520px;
+}
+
+.xis-saas-blog-slider {
+  margin-left: -30px;
+}
+
+.xis-saas-blog-content {
+  padding-top: 100px;
+}
+
+.xis-saas-blog-item {
+  padding: 85px 60px;
+  border-radius: 40px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0.872px 24.985px 32px 0px rgba(6, 17, 59, 0.06);
+          box-shadow: 0.872px 24.985px 32px 0px rgba(6, 17, 59, 0.06);
+}
+.xis-saas-blog-item .xis-saas-blog-img {
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.xis-saas-blog-item .xis-saas-blog-img img {
+  height: 100%;
+  width: 100%;
+}
+.xis-saas-blog-item .xis-saas-blog-text .blog-cat {
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-family: "GT Walsheim Pro Medium Regular";
+  background: -webkit-gradient(linear, right top, left top, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background: linear-gradient(-90deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+}
+.xis-saas-blog-item .xis-saas-blog-text h3 {
+  color: #20395c;
+  font-size: 36px;
+  padding: 27px 0px;
+  line-height: 1.222;
+}
+.xis-saas-blog-item .xis-saas-blog-text .blog-meta a {
+  color: #526a8b;
+  margin-right: 15px;
+  position: relative;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-blog-item .xis-saas-blog-text .blog-meta a:before {
+  top: 0;
+  right: -13px;
+  content: "/";
+  color: #526a8b;
+  position: absolute;
+}
+.xis-saas-blog-item .xis-saas-blog-text .blog-meta a:last-child:before {
+  display: none;
+}
+
+.xis-saas-blog-item-area {
+  width: 610px;
+  padding: 0px 10px;
+}
+.xis-saas-blog-item-area .xis-saas-blog-shape {
+  top: -42px;
+  opacity: 0;
+  right: -5px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.xis-saas-blog-item-area.slick-current.slick-active {
+  width: 680px;
+  padding: 0px 30px;
+  margin-right: 15px;
+}
+.xis-saas-blog-item-area.slick-current.slick-active .xis-saas-blog-shape {
+  opacity: 1;
+}
+.xis-saas-blog-item-area.slick-current.slick-active .xis-saas-blog-item {
+  background-color: #000435;
+}
+.xis-saas-blog-item-area.slick-current.slick-active .xis-saas-blog-img {
+  opacity: 1;
+}
+.xis-saas-blog-item-area.slick-current.slick-active .xis-saas-blog-text h3 {
+  color: #fff;
+}
+
+.xis-saas-blog-slider .slick-list {
+  overflow: visible;
+}
+.xis-saas-blog-slider .slick-slide {
+  -webkit-transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+  transition: 0.3s cubic-bezier(0.24, 0.74, 0.58, 1);
+  opacity: 0;
+}
+.xis-saas-blog-slider .slick-slide.slick-active {
+  opacity: 1;
+}
+.xis-saas-blog-slider .slick-dots {
+  left: 30px;
+  width: auto;
+  bottom: -210px;
+}
+.xis-saas-blog-slider .slick-dots li {
+  margin: 0;
+  width: auto;
+  height: auto;
+  color: #a4abb4;
+  margin-right: 30px;
+  position: relative;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  font-family: GT Walsheim Pro;
+}
+.xis-saas-blog-slider .slick-dots li:before {
+  top: 0;
+  right: -10px;
+  content: "/";
+  color: #a4abb4;
+  position: absolute;
+}
+.xis-saas-blog-slider .slick-dots li.slick-active span {
+  color: #20395c;
+  font-size: 60px;
+}
+.xis-saas-blog-slider .slick-dots li.slick-active:before {
+  display: none;
+}
+
+.xis-saas-blog-carousel-pagination .blg-left_arrow,
+.xis-saas-blog-carousel-pagination .blg-right_arrow {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 100%;
+  position: relative;
+  background-color: #fff;
+}
+.xis-saas-blog-carousel-pagination .blg-left_arrow:before,
+.xis-saas-blog-carousel-pagination .blg-right_arrow:before {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: linear-gradient(-108deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+}
+.xis-saas-blog-carousel-pagination .blg-left_arrow:hover,
+.xis-saas-blog-carousel-pagination .blg-right_arrow:hover {
+  color: #fff;
+}
+.xis-saas-blog-carousel-pagination .blg-left_arrow:hover:before,
+.xis-saas-blog-carousel-pagination .blg-right_arrow:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/*---------------------------------------------------- */
+/*Help area*/
+/*----------------------------------------------------*/
+.xis-saas-help-section {
+  padding: 100px 0px 80px;
+}
+
+.xis-saas-help-inner-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.xis-saas-help-inner-item .xis-saas-thx-icon {
+  width: 55px;
+  margin-right: 30px;
+}
+.xis-saas-help-inner-item .xis-saas-thx-text {
+  max-width: 455px;
+}
+.xis-saas-help-inner-item .xis-saas-thx-text h3 {
+  color: #101629;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.xis-saas-help-inner-item .xis-saas-thx-text p {
+  line-height: 1.765;
+  padding-bottom: 20px;
+}
+.xis-saas-help-inner-item .xis-saas-thx-text a {
+  color: #101629;
+  font-family: "GT Walsheim Pro";
+}
+.xis-saas-help-inner-item .xis-saas-thx-text a i {
+  top: 3px;
+  margin-left: 5px;
+  position: relative;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+}
+.xis-saas-help-inner-item .xis-saas-thx-text a:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background: linear-gradient(-90deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.xis-saas-help-inner-item .xis-saas-thx-text a:hover i {
+  margin-left: 8px;
+  background: -webkit-gradient(linear, right top, left top, from(#0090ff), color-stop(51%, #4e70fc), to(#9b4ff9));
+  background: linear-gradient(-90deg, #0090ff 0%, #4e70fc 51%, #9b4ff9 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*---------------------------------------------------- */
+/*CTA area*/
+/*----------------------------------------------------*/
+.xis-saas-cta-content {
+  overflow: hidden;
+  padding: 130px 0px;
+  border-radius: 30px;
+}
+.xis-saas-cta-content .xis-saas-section-title h2 {
+  color: #fff;
+  margin: 0 auto;
+  line-height: 1.2;
+}
+.xis-saas-cta-content .xis-saas-banner-list li {
+  color: #fff;
+  font-family: "GT Walsheim Regular";
+}
+
+.xis-saas-cta-subscribe {
+  margin-top: 45px;
+}
+.xis-saas-cta-subscribe input {
+  width: 205px;
+  height: 60px;
+  border: none;
+  color: #101629;
+  margin: 0px 7px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-cta-subscribe input::-webkit-input-placeholder {
+  color: #101629;
+}
+.xis-saas-cta-subscribe input::-moz-placeholder {
+  color: #101629;
+}
+.xis-saas-cta-subscribe input:-ms-input-placeholder {
+  color: #101629;
+}
+.xis-saas-cta-subscribe input::-ms-input-placeholder {
+  color: #101629;
+}
+.xis-saas-cta-subscribe input::placeholder {
+  color: #101629;
+}
+.xis-saas-cta-subscribe input:focus {
+  -webkit-box-shadow: -0.994px 18.974px 32px 0px rgba(0, 32, 81, 0.18);
+          box-shadow: -0.994px 18.974px 32px 0px rgba(0, 32, 81, 0.18);
+}
+.xis-saas-cta-subscribe button {
+  color: #fff;
+  height: 60px;
+  width: 175px;
+  margin: 0px 7px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-cta-subscribe button:hover {
+  border: 2px solid #1189fe;
+  background-color: #1189fe;
+}
+
+/*---------------------------------------------------- */
+/*Footer area*/
+/*----------------------------------------------------*/
+.xis-saas-footer-section {
+  padding-top: 100px;
+}
+
+.xis-saas-footer-widget-wrapper {
+  padding-bottom: 50px;
+}
+
+.xis-saas-footer-widget .widget-title {
+  color: #0b2241;
+  font-size: 22px;
+  padding-bottom: 22px;
+}
+.xis-saas-footer-widget .xis-saas-about-widget {
+  width: 210px;
+}
+.xis-saas-footer-widget .xis-saas-contact-widget {
+  width: 190px;
+}
+.xis-saas-footer-widget .xis-saas-contact-widget li {
+  margin-bottom: 10px;
+}
+.xis-saas-footer-widget .xis-saas-contact-widget i {
+  float: left;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #054ada;
+  margin-right: 10px;
+}
+.xis-saas-footer-widget .xis-saas-contact-widget a {
+  display: block;
+  overflow: hidden;
+}
+.xis-saas-footer-widget .xis-saas-link-widget {
+  width: 190px;
+}
+.xis-saas-footer-widget .xis-saas-link-widget a {
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+}
+.xis-saas-footer-widget .xis-saas-link-widget a:before {
+  right: 0;
+  width: 0%;
+  left: auto;
+  height: 1px;
+  bottom: 2px;
+  content: "";
+  position: absolute;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  background-color: #526a8b;
+}
+.xis-saas-footer-widget .xis-saas-link-widget a:hover:before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+.xis-saas-footer-widget .xis-saas-menu-widget {
+  width: 155px;
+}
+.xis-saas-footer-widget .xis-saas-menu-widget li {
+  margin-bottom: 10px;
+}
+.xis-saas-footer-widget .xis-saas-menu-widget li a:hover {
+  color: #1189fe;
+}
+.xis-saas-footer-widget .xis-saas-app-widget {
+  width: 180px;
+}
+.xis-saas-footer-widget .xis-saas-app-widget li {
+  margin-bottom: 8px;
+}
+
+.xis-saas-footer-menu-wrapper {
+  padding: 40px 0px;
+  background-color: #f3f3fe;
+}
+.xis-saas-footer-menu-wrapper .footer-menu a {
+  color: #101629;
+  margin-left: 15px;
+  font-family: "GT Walsheim Pro Medium Regular";
+}
+.xis-saas-footer-menu-wrapper .footer-menu a:hover {
+  color: #1189fe;
+}
+
+.xis-saas-copyright {
+  padding: 20px 0px;
+  background-color: #c7ceed;
+}
+.xis-saas-copyright .xis-saas-copyright-social a {
+  margin-left: 10px;
+}
+.xis-saas-copyright .xis-saas-copyright-social a:hover {
+  color: #1189fe;
+}
+
+/*---------------------------------------------------- */
+/*Responsive area*/
+/*----------------------------------------------------*/
+@media screen and (max-width: 1500px) {
+  .xis-saas-banner-section {
+    background-size: auto;
+  }
+
+  .xis-saas-about-img-wrapper .xis-saas-about-img1 {
+    left: -90px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .xis-saas-banner-img-wrapper {
+    max-width: 600px;
+  }
+
+  .xis-saas-banner-img-wrapper .xis-saas-banner-img3 {
+    right: -110px;
+    max-width: 240px;
+  }
+
+  .xis-saas-banner-img-wrapper .xis-saas-banner-img2 {
+    width: 240px;
+  }
+
+  .xis-saas-about-img-wrapper .xis-saas-about-img1 {
+    left: 0;
+  }
+
+  .xis-saas-about-img-wrapper .xis-saas-about-img2,
+.xis-saas-about-img-wrapper .xis-saas-about-img3 {
+    right: 0;
+  }
+
+  .xis-saas-section-title h2 {
+    font-size: 36px;
+  }
+
+  .xis-saas-about-funfact-item {
+    width: 160px;
+  }
+
+  .xis-saas-service-img li .testi-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .xis-saas-service-slider-wrapper .slick-dots {
+    left: -250px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .xis-saas-setup-section {
+    overflow: hidden;
+  }
+
+  .xis-saas-about-img-wrapper {
+    margin-top: 0;
+    margin: 0 auto;
+    max-width: 570px;
+  }
+
+  .xis-saas-about-text-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    padding-top: 60px;
+  }
+
+  .xis-saas-setup-item {
+    margin-bottom: 30px;
+  }
+
+  .xis-saas-setup-item:after {
+    display: none;
+  }
+
+  .xis-saas-feature-img-wrapper,
+.xis-saas-feature-text-wrapper,
+.xis-saas-feature-img-wrapper-2 {
+    margin: 0 auto;
+    max-width: 570px;
+    padding-left: 0;
+  }
+
+  .xis-saas-feature-img-wrapper,
+.xis-saas-feature-img-wrapper-2 {
+    margin-bottom: 60px;
+  }
+
+  .xis-saas-feature-section2 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .xis-saas-service-img li .testi-img {
+    height: 55px;
+    width: 55px;
+  }
+
+  .xis-saas-service-section .xis-saas-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .xis-saas-service-slider-wrapper:before {
+    display: none;
+  }
+
+  .xis-saas-service-more {
+    padding: 40px 0px 25px;
+  }
+
+  .xis-saas-service-title-text {
+    max-width: 40%;
+  }
+
+  .xis-saas-service-top-content .xis-saas-section-title {
+    max-width: 45%;
+  }
+
+  .xis-saas-help-inner-item {
+    margin-bottom: 40px;
+  }
+
+  .xis-saas-service-section {
+    padding-top: 80px;
+  }
+
+  .xis-saas-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .xis-saas-service-slider-wrapper .slick-dots {
+    margin-top: 20px;
+    position: static;
+  }
+
+  .xis-saas-service-slider-area {
+    padding-top: 60px;
+  }
+
+  .xis-saas-service-slider-wrapper .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .xis-saas-service-more {
+    padding: 20px 0px 10px;
+  }
+
+  .xis-saas-service-item .xis-saas-service-text {
+    height: auto;
+  }
+
+  .xis-saas-service-slider .slick-slide {
+    overflow: 1;
+  }
+
+  .xis-saas-service-item {
+    background-color: #fff;
+    -webkit-box-shadow: -1.04px 4.891px 51px 0px rgba(6, 17, 59, 0.14);
+            box-shadow: -1.04px 4.891px 51px 0px rgba(6, 17, 59, 0.14);
+  }
+
+  .carousel-inner {
+    z-index: 2;
+  }
+
+  .xis-saas-main-navigation-area {
+    display: none;
+  }
+
+  .mobile_menu_button {
+    display: block;
+  }
+
+  .xis-saas-header-cta-btn a {
+    margin-right: 40px;
+  }
+
+  .xis-saas-body section {
+    overflow: hidden;
+  }
+
+  .mobile_menu_button {
+    top: -44px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .xis-saas-main-navigation li {
+    margin: 0px 10px;
+  }
+
+  .xis-saas-header-cta-btn a {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .xis-saas-banner-img-wrapper {
+    max-width: 420px;
+  }
+
+  .xis-saas-about-funfact-item {
+    width: 175px;
+  }
+
+  .xis-saas-service-top-content .xis-saas-section-title {
+    max-width: 100%;
+    margin: 0;
+  }
+  .xis-saas-service-top-content .xis-saas-section-title h2 {
+    max-width: 100%;
+  }
+
+  .xis-saas-service-title-text {
+    max-width: 100%;
+  }
+
+  .xis-saas-blog-top-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .xis-saas-blog-top-content .xis-saas-blog-top-text {
+    padding-top: 20px;
+  }
+
+  .xis-saas-blog-item-area.slick-current.slick-active {
+    width: auto;
+    margin: 0 auto;
+    max-width: 610px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .xis-saas-banner-text h1 {
+    font-size: 40px;
+  }
+
+  .xis-saas-body section {
+    overflow: hidden;
+  }
+  .xis-saas-body .scrollup {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .xis-saas-header-main-content .brand-logo {
+    width: 120px;
+  }
+
+  .xis-saas-banner-text h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+  }
+
+  .xis-saas-banner-text p {
+    padding-bottom: 25px;
+  }
+
+  .xis-saas-banner-text .xis-saas-btn a {
+    height: 50px;
+    width: 150px;
+  }
+
+  .xis-saas-banner-img-wrapper {
+    max-width: 270px;
+    padding-top: 40px;
+  }
+
+  .xis-saas-banner-img-wrapper .xis-saas-banner-img3 {
+    right: -30px;
+    bottom: 15px;
+    max-width: 100px;
+  }
+
+  .xis-saas-banner-img-wrapper .xis-saas-banner-img2 {
+    top: 70px;
+    left: -30px;
+    max-width: 100px;
+  }
+
+  .xis-saas-banner-list {
+    padding-top: 30px;
+  }
+
+  .xis-saas-about-img-wrapper .xis-saas-about-img2, .xis-saas-about-img-wrapper .xis-saas-about-img3 {
+    width: 50%;
+  }
+
+  .xis-saas-sponsor-section {
+    padding-top: 40px;
+  }
+
+  .xis-saas-section-title h2 {
+    font-size: 28px;
+  }
+
+  .xis-saas-about-feature-item {
+    width: 100%;
+  }
+
+  .xis-saas-about-funfact-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .xis-saas-about-funfact-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .xis-saas-about-section {
+    padding: 60px 0px 20px;
+  }
+
+  .xis-saas-setup-section {
+    padding: 60px 0px 50px;
+  }
+
+  .xis-saas-setup-content {
+    padding-top: 30px;
+  }
+
+  .xis-saas-setup-download {
+    padding-top: 30px;
+  }
+
+  .xis-saas-feature-img-wrapper .xis-saas-feature-img3 {
+    left: 0;
+  }
+
+  .xis-saas-feature-section .xis-saas-feature-shape1 {
+    display: none;
+  }
+
+  .xis-saas-service-section {
+    padding-bottom: 60px;
+  }
+
+  .xis-saas-testimonial-slider-wrapper .carousel-inner {
+    margin-top: 40px;
+  }
+
+  .xis-saas-testimonial-section {
+    padding-bottom: 0;
+  }
+
+  .xis-sass-testimonial-inner-item .xis-sass-author-img {
+    height: 350px;
+    width: 350px;
+  }
+
+  .xis-sass-testimonial-inner-item .xis-sass-author-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .xis-sass-testimonial-inner-item .xis-sass-author-img:after {
+    height: 345px;
+    width: 345px;
+  }
+  .xis-sass-testimonial-inner-item .xis-sass-author-img:before {
+    top: 50px;
+    left: 50px;
+    width: 245px;
+    height: 245px;
+  }
+
+  .xis-saas-blog-item-area {
+    padding: 0;
+    width: 380px !important;
+  }
+
+  .xis-saas-blog-item-area.slick-current.slick-active {
+    padding: 0;
+    max-width: 350px;
+  }
+
+  .xis-saas-blog-item-area.slick-current.slick-active .xis-saas-blog-shape {
+    display: none;
+  }
+
+  .xis-saas-blog-slider .slick-list {
+    overflow: hidden;
+  }
+
+  .xis-saas-blog-slider {
+    margin-left: 0px;
+  }
+
+  .xis-saas-blog-content {
+    padding-top: 30px;
+  }
+
+  .xis-saas-blog-item .xis-saas-blog-text h3 {
+    font-size: 28px;
+  }
+
+  .xis-saas-blog-section .progress {
+    margin-top: 20px;
+  }
+
+  .xis-saas-blog-slider .slick-dots {
+    display: none !important;
+  }
+
+  .xis-saas-blog-section {
+    padding: 60px 0px;
+  }
+
+  .xis-saas-blog-carousel-pagination .blg-left_arrow, .xis-saas-blog-carousel-pagination .blg-right_arrow {
+    height: 40px;
+    width: 40px;
+  }
+
+  .xis-saas-help-section {
+    padding: 60px 0px 20px;
+  }
+
+  .xis-saas-help-inner-item .xis-saas-thx-text {
+    max-width: 270px;
+  }
+
+  .xis-saas-cta-content {
+    padding: 60px;
+  }
+
+  .xis-saas-cta-subscribe input {
+    margin-bottom: 20px;
+  }
+
+  .xis-saas-cta-subscribe {
+    margin-top: 20px;
+  }
+
+  .xis-saas-cta-subscribe button {
+    height: 50px;
+    width: 120px;
+  }
+
+  .xis-saas-footer-menu-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .xis-saas-footer-menu-content .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  .xis-saas-footer-menu-wrapper .footer-menu a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .xis-saas-header-cta-btn a {
+    width: 90px;
+    height: 40px;
+    margin-right: 40px;
+  }
+
+  .mobile_menu_button {
+    top: -38px;
+  }
+}
+/*---------------------------------------------------- */

@@ -1,0 +1,40 @@
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 28/03/2020 06:24
+    */
+
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../fonts/law/Flaticon.eot");
+      src: url("../fonts/law/Flaticon.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/law/Flaticon.woff2") format("woff2"),
+      url("../fonts/law/Flaticon.woff") format("woff"),
+      url("../fonts/law/Flaticon.ttf") format("truetype"),
+      url("../fonts/law/Flaticon.svg#Flaticon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/law/Flaticon.svg#Flaticon") format("svg");
+      }
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+      font-family: Flaticon;
+      line-height: 1;
+      font-style: normal;
+    }
+
+    .flaticon-justice:before { content: "\f100"; }
+    .flaticon-court:before { content: "\f101"; }
+    .flaticon-gavel:before { content: "\f102"; }
+    .flaticon-award:before { content: "\f103"; }
+    .flaticon-family:before { content: "\f104"; }
+    .flaticon-criminal:before { content: "\f105"; }
+    .flaticon-cyber-security:before { content: "\f106"; }
+    .flaticon-crossed-arrows:before { content: "\f107"; }
+    .flaticon-phone-call:before { content: "\f108"; }

@@ -1,0 +1,78 @@
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 13/10/2021 14:58
+    */
+
+    @font-face {
+      font-family: "Flaticon";
+      src: url("../font-4/Flaticon.eot");
+      src: url("../font-4/Flaticon.eot?#iefix") format("embedded-opentype"),
+      url("../font-4/Flaticon.woff2") format("woff2"),
+      url("../font-4/Flaticon.woff") format("woff"),
+      url("../font-4/Flaticon.ttf") format("truetype"),
+      url("../font-4/Flaticon.svg#Flaticon") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      @font-face {
+        font-family: "Flaticon";
+        src: url("../font-4/Flaticon.svg#Flaticon") format("svg");
+      }
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+      font-family: Flaticon;
+      font-style: normal;
+    }
+
+    .flaticon-joomla-logo:before { content: "\f100"; }
+    .flaticon-wordpress:before { content: "\f101"; }
+    .flaticon-python:before { content: "\f102"; }
+    .flaticon-wordpress-1:before { content: "\f103"; }
+    .flaticon-design-software:before { content: "\f104"; }
+    .flaticon-software:before { content: "\f105"; }
+    .flaticon-software-1:before { content: "\f106"; }
+    .flaticon-software-development:before { content: "\f107"; }
+    .flaticon-software-application:before { content: "\f108"; }
+    .flaticon-anti-virus-software:before { content: "\f109"; }
+    .flaticon-software-2:before { content: "\f10a"; }
+    .flaticon-software-development-1:before { content: "\f10b"; }
+    .flaticon-desktop:before { content: "\f10c"; }
+    .flaticon-desktop-1:before { content: "\f10d"; }
+    .flaticon-desktop-2:before { content: "\f10e"; }
+    .flaticon-coding:before { content: "\f10f"; }
+    .flaticon-binary-code:before { content: "\f110"; }
+    .flaticon-black-star-silhouette:before { content: "\f111"; }
+    .flaticon-star:before { content: "\f112"; }
+    .flaticon-calendar:before { content: "\f113"; }
+    .flaticon-big-calendar:before { content: "\f114"; }
+    .flaticon-calendar-1:before { content: "\f115"; }
+    .flaticon-up-arrow:before { content: "\f116"; }
+    .flaticon-chevron:before { content: "\f117"; }
+    .flaticon-chevron-1:before { content: "\f118"; }
+    .flaticon-chevron-2:before { content: "\f119"; }
+    .flaticon-up-chevron:before { content: "\f11a"; }
+    .flaticon-left-arrow:before { content: "\f11b"; }
+    .flaticon-facebook-app-symbol:before { content: "\f11c"; }
+    .flaticon-placeholder-filled-point:before { content: "\f11d"; }
+    .flaticon-xing-social-logotype:before { content: "\f11e"; }
+    .flaticon-vk-social-logotype:before { content: "\f11f"; }
+    .flaticon-twitter-social-logotype:before { content: "\f120"; }
+    .flaticon-pinterest-social-logo:before { content: "\f121"; }
+    .flaticon-team:before { content: "\f122"; }
+    .flaticon-discount:before { content: "\f123"; }
+    .flaticon-discount-1:before { content: "\f124"; }
+    .flaticon-discount-2:before { content: "\f125"; }
+    .flaticon-discount-3:before { content: "\f126"; }
+    .flaticon-data-security:before { content: "\f127"; }
+    .flaticon-cyber-security:before { content: "\f128"; }
+    .flaticon-menu:before { content: "\f129"; }
+    .flaticon-menu-1:before { content: "\f12a"; }
+    .flaticon-menu-2:before { content: "\f12b"; }
+    .flaticon-plus:before { content: "\f12c"; }
+    .flaticon-minus:before { content: "\f12d"; }
+    .flaticon-letter-x:before { content: "\f12e"; }
+    .flaticon-play-button:before { content: "\f12f"; }

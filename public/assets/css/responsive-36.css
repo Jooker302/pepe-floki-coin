@@ -1,0 +1,358 @@
+/*  HTML Template */
+
+@media only screen and (max-width: 1340px){
+
+	
+	
+}
+
+@media only screen and (max-width: 1140px){
+	
+	.tparrows,
+	.news-section .pattern-layer-one,
+	.service-block-two .inner-box .content-box .text{
+		display:none !important;
+	}
+	
+	.about-section .skill-column .inner-column{
+		padding-left:0px;
+	}
+	
+	.sec-title h2{
+		font-size:44px;
+	}
+	
+	.about-section .skill-column .skills{
+		max-width:100%;
+	}
+	
+	.services-section-two .services-tabs{
+		padding-left:510px;
+	}
+	
+	.services-section-two .services-tabs .tab-btns{
+		max-width:490px;
+	}
+	
+	.services-section-two .services-tabs .tab-btns .tab-btn{
+		font-size:14px;
+	}
+	
+	.sec-title .text{
+		font-size:16px;
+	}
+	
+	.team-section .pattern-layer-two{
+		display:none;
+	}
+	
+}
+
+@media only screen and (min-width: 768px){
+	
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+	
+}
+
+@media only screen and (max-width: 1023px){
+	
+	.main-header{
+		position:relative;
+	}
+	
+	.business-main-slider .content-image{
+		display:none;
+	}
+	
+	.main-header .sticky-header .main-menu .navigation > li{
+		margin-right:22px;
+	}
+	
+	.business-main-slider .logo{
+		top:20px;
+	}
+	
+	.business-main-slider h1{
+		font-size:50px;
+	}
+	
+	.business-main-slider .text{
+		font-size:16px;
+	}
+	
+	.services-section .inner-container{
+		margin-top:90px;
+	}
+	
+	.service-block-two{
+		order:2;
+	}
+	
+	.service-block:nth-child(2){
+		order:3;
+	}
+	
+	.service-block-two .inner-box .content-box .text{
+		display:block !important;
+	}
+	
+	.about-section .skill-column{
+		order:1;
+	}
+	
+	.about-section .image-column{
+		order:2;
+	}
+	
+	.services-section-two .services-tabs .tab-btns .tab-btn::before,
+	.services-section-two .pattern-layer-one{
+		display:none;
+	}
+	
+	.services-section-two .services-tabs{
+		padding-left:0px;
+	}
+	
+	.services-section-two .services-tabs .tab-btns{
+		position:relative;
+		max-width:100%;
+	}
+	
+	.services-section-two .services-tabs .image-content{
+		top:30px;
+		left:30px;
+	}
+	
+	.services-section-two .services-tabs .tab-btns .tab-btn:hover,
+	.services-section-two .services-tabs .tab-btns .tab-btn.active-btn{
+		transform:translateX(0px);
+	}
+	
+	.news-section .sec-title .pull-right,
+	.partners-section .sec-title .pull-right,
+	.team-section .sec-title .pull-right{
+		width:100%;
+	}
+	
+	.news-section .sec-title .text br,
+	.partners-section .sec-title .text br,
+	.team-section .sec-title .text br{
+		display:none;
+	}
+	
+	.quote-section .title-column .inner-column{
+		text-align:center;
+	}
+	
+}
+
+@media only screen and (max-width: 767px){
+	
+	.nav-outer .mobile-nav-toggler{
+		display:block;
+		padding:15px 0px;
+	}
+	
+	#navbarSupportedContent{
+		display:block;
+	}
+	
+	.mCSB_inside > .mCSB_container{
+		margin-right:0px;
+	}
+	
+	.business-main-slider .logo,
+	.main-menu{
+		display:none;
+	}
+	
+	.main-header .sticky-header .mobile-nav-toggler{
+		cursor:pointer;
+		font-size:28px;
+		display:block;
+		padding:13px 0px;
+	}
+	
+	.main-header .header-lower .inner-container .logo{
+		display:block;
+		padding:10px 0px;
+	}
+	
+	.business-main-slider .slide-content{
+		padding:30px 30px;
+	}
+	
+	.business-main-slider h1{
+		font-size:40px;
+	}
+	
+	.sec-title h2{
+		font-size:36px;
+	}
+	
+	.fact-counter .column .inner .content{
+		padding-left:0px;
+		text-align:center;
+	}
+	
+	.business-main-slider .graph-icon,
+	.fact-counter .column .inner .content::before{
+		display:none;
+	}
+	
+	.fact-counter .column .inner .icon{
+		position:relative;
+		margin-bottom:15px;
+	}
+	
+}
+
+@media only screen and (max-width: 599px){
+	
+	.business-main-slider h1{
+		font-size:32px;
+	}
+	
+	.sec-title .text br,
+	.cta-section .pattern-layer-one,
+	.service-block-two .inner-box .content-box .text{
+		display:none !important;
+	}
+	
+	.services-section-two .services-tabs .image-content{
+		position:relative;
+		top:0px;
+		left:0px;
+		max-width:100%;
+		margin-top:25px;
+	}
+	
+	.partners-section .title-column .inner-column{
+		padding-left:0px;
+		text-align:center;
+	}
+	
+	.quote-section .inner-container{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	
+	.sec-title h2{
+		font-size:30px;
+	}
+	
+	.news-block .inner-box{
+		padding-left:0px;
+	}
+	
+	.news-block .inner-box .image{
+		position:relative;
+		width:100%;
+		display:block;
+		height:auto;
+	}
+	
+	.business-main-slider .title{
+		padding-right:0px;
+	}
+	
+	.business-main-slider .title:before{
+		display:none;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.business-main-slider .slide-content{
+		padding:20px 20px;
+	}
+	
+	.business-main-slider h1{
+		font-size:24px;
+		margin-top:0px;
+	}
+	
+	.sec-title h2{
+		font-size:24px;
+	}
+	
+	.sec-title .styled-title{
+		font-size:30px;
+	}
+	
+	.service-block-two .inner-box .icon,
+	.services-section-two .services-tabs .image-content .text br,
+	.service-block-two .inner-box .content-box .started,
+	.business-main-slider .title,
+	.business-main-slider .video-box{
+		display:none;
+	}
+	
+	.btn-style-one{
+		padding:16px 30px 16px;
+	}
+	
+	.business-main-slider .text{
+		font-size:14px;
+		margin-top:10px;
+		margin-bottom:15px;
+	}
+	
+	.services-section-two .services-tabs .tab-btns .tab-btn{
+		padding:20px 20px;
+		text-align:center;
+	}
+	
+	.services-section-two .services-tabs .tab-btns .tab-btn .icon{
+		position:relative;
+		left:0px;
+		top:0px;
+		margin-bottom:20px;
+	}
+	
+	.services-section-two .services-tabs .image-content{
+		padding:20px 20px;
+	}
+	
+	.services-section-two .services-tabs .image-content .title{
+		font-size:20px;
+	}
+	
+	.partners-section .title-column .text{
+		font-size:22px;
+	}
+	
+	.quote-box .form-group{
+		padding-right:0px;
+	}
+	
+	.quote-box .form-group button{
+		position:relative;
+		width:100%;
+		display:block;
+		margin-top:10px;
+	}
+	
+	.news-block .inner-box .content-box{
+		padding:25px 22px;
+	}
+	
+	.contact-map-section .map-box{
+		max-width:290px;
+	}
+	
+	.contact-map-section .map-box h3{
+		font-size:22px;
+	}
+	
+	.contact-map-section .contact-list li strong{
+		font-size:20px;
+	}
+	
+}

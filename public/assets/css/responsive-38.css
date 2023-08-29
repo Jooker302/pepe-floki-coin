@@ -1,0 +1,374 @@
+/*  HTML Template */
+
+@media only screen and (max-width: 1340px){
+
+	
+	
+}
+
+@media only screen and (max-width: 1140px){
+	
+	.tparrows,
+	.price-block .inner-box .text br,
+	.case-section .right-column .case-list,
+	.case-section .right-column .about-us,
+	.default-section .right-column .side-image{
+		display:none !important;
+	}
+	
+	.case-section .right-column .sec-title{
+		margin-bottom:30px;
+	}
+	
+	.case-section .right-column .market-box{
+		max-width:100%;
+		margin-left:0px;
+	}
+	
+	.case-section .right-column .inner-column{
+		padding-left:20px;
+	}
+	
+}
+
+@media only screen and (min-width: 768px){
+	
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+	
+}
+
+@media only screen and (max-width: 1023px){
+	
+	.main-header{
+		position:relative;
+	}
+	
+	.main-menu .navigation > li{
+		margin-right:30px;
+	}
+	
+	.main-header .nav-outer{
+		width:100%;
+		padding-top:0px;
+	}
+	
+	.main-header .sticky-header .pull-right{
+		width:100%;
+	}
+	
+	.sec-title h2 br,
+	.sec-title .text br,
+	.cta-section-two .pattern-layer{
+		display:none;
+	}
+	
+	.about-section .content-column .sec-title .text{
+		max-width:100%;
+	}
+	
+	.about-section .image-column .experiance-box{
+		left:30px;
+		bottom:-30px;
+	}
+	
+	.default-section .left-column{
+		width:100%;
+	}
+	
+	.default-section .left-column .inner-column{
+		max-width:100%;
+		padding-right:15px;
+	}
+	
+	.default-section .right-column{
+		width:100%;
+	}
+	
+	.default-section{
+		background-color:#ececec;
+	}
+	
+	.default-section .pattern-layer-two{
+		display:none;
+	}
+	
+	.default-section .right-column .inner-column{
+		padding-left:15px;
+		max-width:100%;
+		padding-top:40px;
+	}
+	
+	.default-section .right-column .form-box{
+		max-width:100%;
+	}
+	
+	.default-section .right-column .title-box h2,
+	.default-section .right-column .title-box .text{
+		color:#111111;
+	}
+	
+	.steps-section .step-block:nth-child(2),
+	.steps-section .step-block:nth-child(3){
+		transform:translateY(0px);
+	}
+	
+	.case-section .left-column{
+		width:100%;
+	}
+	
+	.case-section .right-column{
+		width:100%;
+	}
+	
+	.case-section .left-column .owl-nav{
+		left:0px;
+	}
+	
+	.case-section .right-column .inner-column{
+		max-width:100%;
+	}
+	
+	.case-section .right-column .case-list{
+		display:block !important;
+		float:left;
+		width:100%;
+		margin-top:50px;
+		margin-left:0px;
+	}
+	
+	.case-section .right-column .about-us{
+		margin-left:0px;
+		float:left;
+		display:block !important;
+	}
+	
+	.cta-section-two .content-box{
+		padding-left:0px;
+	}
+	
+	.cta-section-two .content-box .logo-icon{
+		position:relative;
+		top:0px;
+	}
+	
+	.cta-section-two .inner-container{
+		padding:40px 30px;
+		text-align:center;
+	}
+	
+	.cta-section .content h2{
+		font-size:40px;
+	}
+	
+	.author-slider-block .inner-box h1{
+		font-size:60px;
+	}
+	
+}
+
+@media only screen and (max-width: 767px){
+	
+	.nav-outer .mobile-nav-toggler{
+		display:block;
+	}
+	
+	#navbarSupportedContent{
+		display:block;
+	}
+	
+	.mCSB_inside > .mCSB_container{
+		margin-right:0px;
+	}
+	
+	.main-menu{
+		display:none;
+	}
+	
+	.main-header .outer-box{
+		float:left;
+		margin-left:0px;
+		padding:0px 0px 10px;
+	}
+	
+	.author-slider-block .inner-box h1{
+		font-size:44px;
+	}
+	
+	.author-slider-block .inner-box .text{
+		font-size:20px;
+	}
+	
+	.step-block .inner-box .text{
+		max-width:100%;
+	}
+	
+	.main-footer .footer-bottom{
+		text-align:center;
+	}
+	
+	.main-footer .footer-bottom .copyright{
+		margin-bottom:10px;
+	}
+	
+	.main-footer .footer-bottom .pull-left{
+		width:100%;
+	}
+	
+	.main-footer .footer-bottom .pull-right{
+		width:100%;
+	}
+	
+	.news-section{
+		margin-top:0px;
+	}
+	
+	.sticky-header .mobile-nav-toggler{
+		display:block;
+		float:right;
+		cursor:pointer;
+		padding:16px 0px;
+		font-size:24px;
+	}
+	
+	.main-header .sticky-header .pull-right{
+		width:auto;
+	}
+	
+	.main-header .header-top .social-box,
+	.main-header .header-top .pull-right{
+		width:100%;
+		text-align:center;
+	}
+	
+	.main-header .header-top .info-list{
+		margin-bottom:10px;
+	}
+	
+}
+
+@media only screen and (max-width: 599px){
+	
+	.sec-title h2{
+		font-size:32px;
+	}
+	
+	.case-section .pattern-layer,
+	.cta-section .content h2 br,
+	.case-section .right-column .market-box h3 br,
+	.fact-counter .column .inner .content::before,
+	.main-header .header-top .info-list{
+		display:none;
+	}
+	
+	.about-section .image-column .image{
+		display:block;
+	}
+	
+	.about-section .image-column .image img{
+		width:100%;
+		display:block;
+	}
+	
+	.fact-counter .column .inner .content{
+		padding-left:0px;
+		text-align:center;
+	}
+	
+	.fact-counter .column .inner .icon{
+		position:relative;
+		margin-bottom:15px;
+	}
+	
+	.cta-section .content h2,
+	h2{
+		font-size:26px;
+	}
+	
+	h3{
+		font-size:22px;
+	}
+	
+	.support-section .phone{
+		font-size:34px;
+	}
+	
+	.case-section .right-column .market-box{
+		padding:30px 30px;
+	}
+	
+	.news-section{
+		margin-top:90px;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.author-slider-block .inner-box h1{
+		font-size:30px;
+	}
+	
+	.sec-title .text,
+	.author-slider-block .inner-box .text{
+		font-size:16px;
+	}
+	
+	.sec-title h2{
+		font-size:24px;
+	}
+	
+	.service-block .overlay-inner .content h5{
+		font-size:20px;
+	}
+	
+	.support-section .content-box .color-layer{
+		transform:rotate(0deg);
+		outline:inherit;
+	}
+	
+	.support-section{
+		background-image:inherit !important;
+		background-color:#0d4eb0;
+	}
+	
+	.pricing-tabs .tab-buttons .tab-btn{
+		width:100%;
+		margin-right:0px;
+	}
+	
+	.price-block .inner-box .price-list li{
+		font-size:16px;
+	}
+	
+	.cta-section .mobile-image{
+		margin-top:0px;
+	}
+	
+	.cta-section-two .content-box h2{
+		font-size:20px;
+	}
+	
+	.subscribe-box .form-group{
+		padding-right:0px;
+	}
+	
+	.subscribe-box .form-group button{
+		position:relative;
+		margin-top:15px;
+		width:100%;
+	}
+	
+	.contact-map-section .map-content-box{
+		max-width:295px;
+	}
+	
+	.contact-map-section .map-content-box{
+		padding:20px 20px 10px;
+	}
+	
+}
