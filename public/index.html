@@ -1,43 +1,1766 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+	<meta charset="UTF-8">
+	<title>IT Solutions- Multi Page </title>
+	<meta name="description" content="-----">
+	<meta name="keywords" content="-------">
+	<meta name="author" content="Themexriver">
+	<link rel="shortcut icon" href="assets/img/fv.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/side-demo.css">
+	<link rel="stylesheet" href="assets/css/it-solution-2.css">
+</head>
+<body class="xis-it-main-body">
+  <div id="root"></div>
+	<div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<div class="demo-page-landing">
+		<div class="side-demo-close side-demo"><i class="fas fa-times"></i></div>
+		<div class="demo-title text-center">
+			<h2>Pre-Built Demos Collection</h2>
+			<p>SaaSio comes with a beautiful collection of modern, easily importable, and highly customizable demo layouts.</p>
+		</div>
+		<div class="demo-page-landing-wrap sa-demo-bar justify-content-center">
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Main</span> 
+					<img alt="Demo" src="assets/img-demo/d1.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-7.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaSio Main</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d52.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-42.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-42.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Online Payment</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d53.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-43.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-43.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency 2023</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d54.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-44.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-44.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Marketing 2023</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d55.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-45.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-45.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>NFT 2023</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d56.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-46.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-46.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaS 2023</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d57.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-47.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-47.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>IT Solution 2023</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d58.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-48.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-48.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Help Desk</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d59.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-49.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-49.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>IT solution 2023 (V.2)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">New</span> 
+					<img alt="Demo" src="assets/img-demo/d60.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-50.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-50.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Law Firm</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d55.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-45.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-45.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Cryto Currency</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner"> 
+					<img alt="Demo" src="assets/img-demo/d50.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-41.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-41.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaSio NFT</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Popular</span> 
+					<img alt="Demo" src="assets/img-demo/d2.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-4.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-4.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaS Classic</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Popular</span> 
+					<img alt="Demo" src="assets/img-demo/d3.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-3.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-3.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaS Modern</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Hot</span> 
+					<img alt="Demo" src="assets/img-demo/d5.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-6.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-6.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency</h6>
+			</div>
+			<!-- Top Popular -->
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d36.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-26.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-26.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Marketing Agency</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d37.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-27.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-27.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Marketing</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d38.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-28.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-28.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>App Landing</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d39.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-29.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-29.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency 2</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d40.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-30.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-30.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Business Consult-4</h6>
+			</div>
+			<!-- New -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d41.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-31.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-31.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Personal Portfolio</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d42.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-32.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-32.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Creative Studio</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d43.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-33.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-33.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>IT Solutions-3</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d44.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-35-1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-35.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Business & Finance</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d45.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-34-1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-34.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d46.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-36.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-36.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Business Consulting</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d47.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-37.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-37.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d48.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-38.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-38.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Finance Consulting</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d49.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-38.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-38.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Marketing</h6>
+			</div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d18.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-19.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-19.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Gym Fitness</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner"> 
+					<img alt="Demo" src="assets/img-demo/d19.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-20.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-20.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Education</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d20.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-21.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-21.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Travel Agency</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d21.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-22.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-22.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>It solution-2</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner"> 
+					<img alt="Demo" src="assets/img-demo/d22.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-23.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-23.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Business Consult-1</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d23.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-24.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-24.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Business Consult-2</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d24.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-25.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-25.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Business Consult-3</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d7.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-8.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-8.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>HR Management</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d8.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-9.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-9.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>CR Management</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d9.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-10.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-10.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Social Media Marketing</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d10.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-11.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-11.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Software Management</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d11.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-12.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-12.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Cyber Security</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d12.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-13.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-13.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Email Marketing</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d13.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-14.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-14.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Web Application</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d14.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-15.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-15.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>SEO Agency</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d15.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-16.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-16.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Medical</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d16.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-17.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-17.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Resturannt</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d17.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-18.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-18.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>IT Solutions-1</h6>
+			</div> 
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d4.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-2.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-2.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital SEO</h6>
+			</div> 
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<img alt="Demo" src="assets/img-demo/d6.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="index-5.1.html" target="_blank">One Page</a>
+							<a class="btn btn-default" href="index-5.html" target="_blank">Multi Pages</a>
+						</div>
+					</div>
+				</div>
+				<h6>Startup Agency</h6>
+			</div> 
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Dark Version</span> 
+					<img alt="Demo" src="assets/img-demo/d25.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="dark-home-1.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaSio Main (Dark)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Dark Version</span> 
+					<img alt="Demo" src="assets/img-demo/d26.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="dark-home-2.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaS Classic (Dark)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Dark Version</span> 
+					<img alt="Demo" src="assets/img-demo/d27.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="dark-home-3.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency (Dark)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Dark Version</span> 
+					<img alt="Demo" src="assets/img-demo/d28.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="dark-home-4.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>StartUp Agency (Dark)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Dark Version</span> 
+					<img alt="Demo" src="assets/img-demo/d29.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="dark-home-5.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>HR Management (Dark)
+				</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">Dark Version</span> 
+					<img alt="Demo" src="assets/img-demo/d30.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="dark-home-6.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>SMM (Dark)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">RTL Version</span> 
+					<img alt="Demo" src="assets/img-demo/d31.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="SaaSio-Rtl/index-5.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>SMM (RTL))</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">RTL Version</span> 
+					<img alt="Demo" src="assets/img-demo/d32.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="SaaSio-Rtl/index.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>Digital Agency (RTL)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">RTL Version</span> 
+					<img alt="Demo" src="assets/img-demo/d33.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="SaaSio-Rtl/index-2.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>SaaSio Main (RTL)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">RTL Version</span> 
+					<img alt="Demo" src="assets/img-demo/d34.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="SaaSio-Rtl/index-3.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>HR Management (RTL)</h6>
+			</div>
+			<div class="sa-demo-bar-item">
+				<div class="sa-demo-bar-item-inner">
+					<span class="demo-label position-absolute">RTL Version</span> 
+					<img alt="Demo" src="assets/img-demo/d35.jpg" alt="">
+					<div class="sa-demo-bar-holder">
+						<div class="sa-demo-btn-group"> 
+							<a class="btn btn-default" href="SaaSio-Rtl/index-4.html" target="_blank">Launch</a>
+						</div>
+					</div>
+				</div>
+				<h6>CR Management(RTL)</h6>
+			</div>
+		</div>
+	</div>
+<!-- Start of header section
+	============================================= -->
+	<header id="xis-it-main-header" class="xis-it-main-header-section">
+		<div class="xis-it-main-header-content position-relative">
+			<div class="xis-it-main-header-content-wrapper d-flex justify-content-between align-items-center">
+				<div class="xis-it-main-header-menu-wrapper d-flex justify-content-between align-items-center"> 
+					<div class="brand-logo">
+						<a href="#"><img src="assets/img/it-solution-2/logo/logo-1.png" alt=""></a>
+					</div>
+					<div class="header-search">
+						<button class="search-box-outer"><i class="fas fa-search"></i></button>
+					</div>
+					<div class="xis-it-main-header-navigation">
+						<nav class="ximsa-it-main-navigation clearfix ul-li">
+							<ul id="ximsa-it-main-nav" class="nav navbar-nav clearfix">
+								<li class="side-demo position-relative"><a href="#!">Demos</a> <span>New</span></li>
+								<li><a href="about.html" target="_blank">About</a></li>
+								<li class="dropdown">
+									<a href="#">Pages</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="team.html">Team Page</a></li>
+										<li><a target="_blank" href="service.html">Service 1</a></li>
+										<li><a target="_blank" href="service-2.html">Service 2</a></li>
+										<li><a target="_blank" href="faq.html">FAQ Page</a></li>
+										<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
+										<li><a target="_blank" href="terms-condition.html">Terms & Condition</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Contact</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="contact.html">Contact 1</a></li>
+										<li><a target="_blank" href="contact-2.html">Contact 2</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Portfolio</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="portfolio.html">Portfolio Filter</a></li>
+										<li><a target="_blank" href="portfolio-2.html">Portfolio Page 2</a></li>
+										<li><a target="_blank" href="project-single.html">Portfolio Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Blog</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="blog.html">Blog Page</a></li>
+										<li><a target="_blank" href="blog-grid.html">Blog Page</a></li>
+										<li><a target="_blank" href="blog-single.html">Blog Details</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="ximsa-it-main-header-cta-wrapper d-flex align-items-center justify-content-between">
+					<div class="ximsa-it-header-cta">
+						<a href="#"><i class="fas fa-paper-plane"></i> +19159969739</a>
+					</div>
+					<div class="ximsa-select-language">
+						<select name="#">
+							<option value="#">EN</option>
+							<option value="#">FR</option>
+							<option value="#">AR</option>
+						</select>
+					</div>
+					<div class="ximsa-it-side-canvas">
+						<button class="navSidebar-button"><i class="fas fa-list-ul"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="mobile_menu">
+				<div class="mobile_menu_button open_mobile_menu">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="mobile_menu_wrap">
+					<div class="mobile_menu_overlay open_mobile_menu"></div>
+					<div class="mobile_menu_content">
+						<div class="mobile_menu_close open_mobile_menu">
+							<i class="fas fa-times"></i>
+						</div>
+						<div class="m-brand-logo">
+							<a  href="!#"><img src="assets/img/it-solution-2/logo/logo-1.png" alt=""></a>
+						</div>
+						<nav class="mobile-main-navigation  clearfix ul-li">
+							<ul id="main-nav" class="nav navbar-nav clearfix">
+								<li class="side-demo position-relative"><a href="#!">Demos</a></li>
+								<li><a href="about.html" target="_blank">About</a></li>
+								<li class="dropdown">
+									<a href="#">Pages</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="team.html">Team Page</a></li>
+										<li><a target="_blank" href="service.html">Service 1</a></li>
+										<li><a target="_blank" href="service-2.html">Service 2</a></li>
+										<li><a target="_blank" href="faq.html">FAQ Page</a></li>
+										<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
+										<li><a target="_blank" href="terms-condition.html">Terms & Condition</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Contact</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="contact.html">Contact 1</a></li>
+										<li><a target="_blank" href="contact-2.html">Contact 2</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Portfolio</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="portfolio.html">Portfolio Filter</a></li>
+										<li><a target="_blank" href="portfolio-2.html">Portfolio Page 2</a></li>
+										<li><a target="_blank" href="project-single.html">Portfolio Details</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#">Blog</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a target="_blank" href="blog.html">Blog Page</a></li>
+										<li><a target="_blank" href="blog-grid.html">Blog Page</a></li>
+										<li><a target="_blank" href="blog-single.html">Blog Details</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- /Mobile-Menu -->
+			</div>
+		</div>
+	</header><!-- /header -->
+
+	<!-- Search PopUp -->
+	<div class="search-popup">
+		<button class="close-search style-two"><span class="fas fa-times"></span></button>
+		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
+		<form method="post" action="blog.html">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</form>
+	</div>
+
+	<!-- Sidebar sidebar Item -->
+	<div class="xs-sidebar-group info-group">
+		<div class="xs-overlay xs-bg-black"></div>
+		<div class="xs-sidebar-widget">
+			<div class="sidebar-widget-container">
+				<div class="widget-heading">
+					<a href="#" class="close-side-widget">
+						X
+					</a>
+				</div>
+				<div class="sidebar-textwidget">
+					
+					<!-- Sidebar Info Content -->
+					<div class="sidebar-info-contents headline pera-content">
+						<div class="content-inner">
+							<div class="logo">
+								<a href="index.html"><img src="assets/img/it-solution-2/logo/logo-2.png" alt=""></a>
+							</div>
+							<div class="content-box">
+								<h5>About Us</h5>
+								<p class="text">The argument in favor of using filler text goes something like this: If you use real content in the Consulting Process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.</p>
+							</div>
+							<div class="gallery-box ul-li">
+								<h5>Gallery</h5>
+								<ul>
+									<li>
+										<a href="#"><img src="assets/img/it-solution-2/gallery/01.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="assets/img/it-solution-2/gallery/02.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="assets/img/it-solution-2/gallery/03.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="assets/img/it-solution-2/gallery/04.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="assets/img/it-solution-2/gallery/05.png" alt=""></a>
+									</li>
+									<li>
+										<a href="#"><img src="assets/img/it-solution-2/gallery/06.png" alt=""></a>
+									</li>
+								</ul>
+							</div>
+							<!-- Social Box -->
+							<div class="content-box">
+								<h5>Social Account</h5>
+								<ul class="social-box">
+									<li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
+									<li><a href="https://www.twitter.com/" class="fab fa-twitter"></a></li>
+									<li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
+									<li><a href="https://www.linkedin.com/" class="fab fa-linkedin"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- End of header section
+	============================================= -->
+
+<!-- Start of Banner section
+	============================================= -->
+	<section id="ximsa-it-banner" class="ximsa-it-banner-section">
+		<div class="ximsa-it-banner-content position-relative"  data-background="assets/img/it-solution-2/banner/banner-bg.jpg">
+			<div class="ximsa-it-banner-img-wrapper position-absolute">
+				<div class="ximsa-it-banner-img wow fadeFromLeft" data-wow-delay="800ms" data-wow-duration="1500ms">
+					<img src="assets/img/it-solution-2/banner/bn1.png" alt="">
+				</div>
+				<span class="ximsa-it-banner-shape position-absolute wow fadeFromUp" data-wow-delay="1000ms" data-wow-duration="1500ms"><img src="assets/img/it-solution-2/banner/img-shape.png"></span>
+			</div>
+			<div class="container">
+				<div class="ximsa-it-banner-text xis-it-main-headline pera-content">
+					<h1 class="text-uppercase wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">IT Solution Services For Your Business Success</h1>
+					<p class="wow fadeFromUp" data-wow-delay="400ms" data-wow-duration="1500ms">We are leading technology solutions providing company all over the world doing over 40 years.</p>
+					<div class="ximsa-banner-btn-group d-flex align-items-center wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="banner-btn">
+							<a class="d-flex justify-content-center align-items-center text-uppercase" href="#">SaaSio All service</a>
+						</div>
+						<div class="banenr-play-btn">
+							<a class="video_box" href="#"><i class="fas fa-play"></i> Play Demo Video</a>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>		
+<!-- End of Banner section
+	============================================= -->
+
+<!-- Start of About section
+	============================================= -->
+	<section id="ximsa-it-about" class="ximsa-it-about-section">
+		<div class="container">
+			<div class="ximsa-it-about-content">
+				<div class="row">
+					<div class="col-lg-6 wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+						<div class="ximsa-about-title text-uppercase xis-it-main-headline d-flex justify-content-center align-items-center position-relative" data-background="assets/img/it-solution-2/about/ab1.png">
+							<h2>About Us <i class="fas fa-angle-right"></i></h2>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 wow fadeFromUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+						<div class="ximsa-it-counter-it-counter position-relative">
+							<span class="icon-shade position-absolute"><img src="assets/img/it-solution-2/icon/ic4.png" alt=""></span>
+							<div class="inner-icon">
+								<img src="assets/img/it-solution-2/icon/ic3.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline pera-content">
+								<h3><span class="odometer" data-count="105"></span><strong>K</strong></h3>
+								<p>World Wide Happy Clients</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+						<div class="ximsa-it-counter-it-counter position-relative">
+							<span class="icon-shade position-absolute"><img src="assets/img/it-solution-2/icon/ic2.png" alt=""></span>
+							<div class="inner-icon">
+								<img src="assets/img/it-solution-2/icon/ic1.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline pera-content">
+								<h3><span class="odometer" data-count="240"></span><strong>K</strong></h3>
+								<p>Total Project Completed</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of About section
+	============================================= -->
+
+<!-- Start of Scroll Down section
+	============================================= -->
+	<section id="ximsa-it-scroll-down" class="ximsa-it-scroll-down-section">
+		<div class="container">
+			<div class="ximsa-it-scroll-down-contnet d-flex justify-content-between align-items-center">
+				<div class="scroll-social ul-li wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+					<ul>
+						<li><i class="fab fa-facebook-f fb-bg"></i> <a class="text-uppercase" href="#">Facebook</a></li>
+						<li><i class="fab fa-twitter tw-bg"></i> <a class="text-uppercase" href="#">Twitter</a></li>
+					</ul>
+				</div>
+				<div class="scroll-down-icon text-center position-relative wow fadeFromUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+					<div class="scroll-icon-area d-flex justify-content-center align-items-center">
+						<i class="fas fa-arrow-down"></i>
+					</div>
+					<span class="scroll-text text-uppercase">Scrool Down</span>
+				</div>
+				<div class="scroll-mail text-uppercase wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+					<a href="#">webinfo@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of Scroll Down  section
+	============================================= -->	
+
+<!-- Start of Skill section
+	============================================= -->
+	<section id="ximsa-it-skill" class="ximsa-it-skill-section">
+		<div class="container">
+			<div class="ximsa-it-skill-content">
+				<div class="row">
+					<div class="col-lg-6 wow fadeFromLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+						<div class="ximsa-it-skill-progress-text">
+							<div class="ximsa-it-section-title xis-it-main-headline pera-content">
+								<h2 class="text-uppercase">We Offer a Wide
+								Variety of IT Services</h2>
+								<p>Over 25 years working in IT services developing software applications and mobile apps for clients all over the world.</p>
+							</div>
+							<div class="ximsa-skill-progress-bar">
+								<div class="skill-set-percent xis-it-main-headline">
+									<h4>Software Development</h4>
+									<div class="progress">
+										<div class="progress-bar" data-percent="92"></div>
+									</div>
+								</div>
+								<div class="skill-set-percent xis-it-main-headline">
+									<h4>Cyber Security</h4>
+									<div class="progress">
+										<div class="progress-bar" data-percent="85"></div>
+									</div>
+								</div>
+								<div class="skill-set-percent xis-it-main-headline">
+									<h4>Artificial Intelligence</h4>
+									<div class="progress">
+										<div class="progress-bar" data-percent="85"></div>
+									</div>
+								</div>
+								<div class="skill-set-percent xis-it-main-headline">
+									<h4>Web Development</h4>
+									<div class="progress">
+										<div class="progress-bar" data-percent="85"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 wow fadeFromRight" data-wow-delay="400ms" data-wow-duration="1500ms">
+						<div class="ximsa-it-skill-img-wrapper">
+							<img src="assets/img/it-solution-2/about/sk.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of Skill Down section
+	============================================= -->
+
+<!-- Start of Service section
+	============================================= -->
+	<section id="ximsa-it-service" class="ximsa-it-service-section">
+		<div class="ximsa-it-service-content position-relative">
+			<div class="container">
+				<div class="ximsa-it-section-title text-center xis-it-main-headline pera-content wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+					<h2 class="text-uppercase">We Are Offering All Kinds of IT Solutions Services</h2>
+				</div>
+				<div class="ximsa-it-service-content-wrap  position-relative">
+					<div class="ximsa-it-service-slider-wrap">
+						<div class="ximsa-it-service-slider-area">
+							<div class="ximsa-it-slider-item">
+								<div class="ximsa-it-service-inner-item">
+									<div class="inner-icon">
+										<img src="assets/img/it-solution-2/icon/ic6.png" alt="">
+									</div>
+									<div class="inner-text xis-it-main-headline">
+										<h3 class="text-uppercase"><a href="#">Web
+										Development</a></h3>
+										<a class="read-more-btn text-uppercase" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="ximsa-it-slider-item">
+								<div class="ximsa-it-service-inner-item">
+									<div class="inner-icon">
+										<img src="assets/img/it-solution-2/icon/ic8.png" alt="">
+									</div>
+									<div class="inner-text xis-it-main-headline">
+										<h3 class="text-uppercase"><a href="#">Web Development</a></h3>
+										<a class="read-more-btn text-uppercase" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="ximsa-it-slider-item">
+								<div class="ximsa-it-service-inner-item">
+									<div class="inner-icon">
+										<img src="assets/img/it-solution-2/icon/ic7.png" alt="">
+									</div>
+									<div class="inner-text xis-it-main-headline">
+										<h3 class="text-uppercase"><a href="#">Business Consulting</a></h3>
+										<a class="read-more-btn text-uppercase" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="ximsa-it-slider-item">
+								<div class="ximsa-it-service-inner-item">
+									<div class="inner-icon">
+										<img src="assets/img/it-solution-2/icon/ic5.png" alt="">
+									</div>
+									<div class="inner-text xis-it-main-headline">
+										<h3 class="text-uppercase"><a href="#">User Experience Design</a></h3>
+										<a class="read-more-btn text-uppercase" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="ximsa-it-slider-item">
+								<div class="ximsa-it-service-inner-item">
+									<div class="inner-icon">
+										<img src="assets/img/it-solution-2/icon/ic6.png" alt="">
+									</div>
+									<div class="inner-text xis-it-main-headline">
+										<h3 class="text-uppercase"><a href="#">Web
+										Development</a></h3>
+										<a class="read-more-btn text-uppercase" href="#">Read More <i class="fas fa-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel_nav text-right ">
+						<button type="button" class="xism-it-service-left_arrow"><i class="fas fa-arrow-left"></i></button>
+						<button type="button" class="xism-it-service-right_arrow"><i class="fas fa-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>		
+<!-- End of Service section
+	============================================= -->
+
+<!-- Start of Project section
+	============================================= -->
+	<section id="ximsa-it-project" class="ximsa-it-project-section">
+		<div class="ximsa-it-project-content">
+			<div class="ximsa-it-section-title text-center xis-it-main-headline pera-content wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+				<h2 class="text-uppercase">Our Recent Launched Projects Available into Market</h2>
+			</div>
+			<div class="ximsa-it-project-content-wrap  position-relative">
+				<div class="ximsa-it-project-slider-wrap">
+					<div class="ximsa-it-project-area">
+						<div class="ximsa-it-slider-item">
+							<div class="ximsa-it-project-item">
+								<div class="inner-img">
+									<img src="assets/img/it-solution-2/project/pro1.png" alt="">
+								</div>
+								<div class="inner-text xis-it-main-headline position-relative">
+									<h3 class="text-uppercase"><a href="#">Business Statergy</a></h3>
+									<span class="item-category text-uppercase">Business</span>
+									<a class="read-more-btn d-flex justify-content-center align-items-center position-absolute" href="$"><i class="fas fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="ximsa-it-slider-item">
+							<div class="ximsa-it-project-item">
+								<div class="inner-img">
+									<img src="assets/img/it-solution-2/project/pro2.png" alt="">
+								</div>
+								<div class="inner-text xis-it-main-headline position-relative">
+									<h3 class="text-uppercase"><a href="#">Imformation Technology</a></h3>
+									<span class="item-category text-uppercase">Finance & Banking</span>
+									<a class="read-more-btn d-flex justify-content-center align-items-center position-absolute" href="$"><i class="fas fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="ximsa-it-slider-item">
+							<div class="ximsa-it-project-item">
+								<div class="inner-img">
+									<img src="assets/img/it-solution-2/project/pro3.png" alt="">
+								</div>
+								<div class="inner-text xis-it-main-headline position-relative">
+									<h3 class="text-uppercase"><a href="#">Business WEbsite Development</a></h3>
+									<span class="item-category text-uppercase">Finance & Banking</span>
+									<a class="read-more-btn d-flex justify-content-center align-items-center position-absolute" href="$"><i class="fas fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="ximsa-it-slider-item">
+							<div class="ximsa-it-project-item">
+								<div class="inner-img">
+									<img src="assets/img/it-solution-2/project/pro1.png" alt="">
+								</div>
+								<div class="inner-text xis-it-main-headline position-relative">
+									<h3 class="text-uppercase"><a href="#">Business Statergy</a></h3>
+									<span class="item-category text-uppercase">Business</span>
+									<a class="read-more-btn d-flex justify-content-center align-items-center position-absolute" href="$"><i class="fas fa-arrow-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel_nav text-right ">
+					<button type="button" class="xism-it-project-left_arrow"><i class="fas fa-arrow-left"></i></button>
+					<button type="button" class="xism-it-project-right_arrow"><i class="fas fa-arrow-right"></i></button>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of Project section
+	============================================= -->
+
+
+<!-- Start of Team section
+	============================================= -->
+	<section id="ximsa-it-team" class="ximsa-it-team-section">
+		<div class="container">
+			<div class="ximsa-it-section-title text-center xis-it-main-headline pera-content wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+				<h2 class="text-uppercase">our Experience is us.
+				meet our Team</h2>
+			</div>
+			<div class="ximsa-it-team-content position-relative">
+				<div class="ximsa-it-team-slider">
+					<div class="ximsa-it-slider-item">
+						<div class="ximsa-it-team-item position-relative">
+							<div class="inner-img">
+								<img src="assets/img/it-solution-2/team/tm1.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline text-uppercase text-center pera-content">
+								<h3><a href="#">Guy Hawkins</a></h3>
+								<p>Ux Designer</p>
+							</div>
+							<div class="social-mail-wrap d-flex justify-content-between position-relative">
+								<div class="ximsa-it-mail">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+								</div>
+								<div class="ximsa-it-share postion-relative">
+									<button><i class="fas fa-share-alt"></i></button>
+									<div class="ximsa-it-share-icon ul-li-block position-absolute">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ximsa-it-slider-item">
+						<div class="ximsa-it-team-item position-relative">
+							<div class="inner-img">
+								<img src="assets/img/it-solution-2/team/tm2.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline text-uppercase text-center pera-content">
+								<h3><a href="#">Brooklyn Simmons</a></h3>
+								<p>Developer</p>
+							</div>
+							<div class="social-mail-wrap d-flex justify-content-between position-relative">
+								<div class="ximsa-it-mail">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+								</div>
+								<div class="ximsa-it-share postion-relative">
+									<button><i class="fas fa-share-alt"></i></button>
+									<div class="ximsa-it-share-icon ul-li-block position-absolute">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ximsa-it-slider-item">
+						<div class="ximsa-it-team-item position-relative">
+							<div class="inner-img">
+								<img src="assets/img/it-solution-2/team/tm3.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline text-uppercase text-center pera-content">
+								<h3><a href="#">Guy Hawkins</a></h3>
+								<p>Ux Designer</p>
+							</div>
+							<div class="social-mail-wrap d-flex justify-content-between position-relative">
+								<div class="ximsa-it-mail">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+								</div>
+								<div class="ximsa-it-share postion-relative">
+									<button><i class="fas fa-share-alt"></i></button>
+									<div class="ximsa-it-share-icon ul-li-block position-absolute">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ximsa-it-slider-item">
+						<div class="ximsa-it-team-item position-relative">
+							<div class="inner-img">
+								<img src="assets/img/it-solution-2/team/tm4.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline text-uppercase text-center pera-content">
+								<h3><a href="#">Alextina Ditarson</a></h3>
+								<p>Developer</p>
+							</div>
+							<div class="social-mail-wrap d-flex justify-content-between position-relative">
+								<div class="ximsa-it-mail">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+								</div>
+								<div class="ximsa-it-share postion-relative">
+									<button><i class="fas fa-share-alt"></i></button>
+									<div class="ximsa-it-share-icon ul-li-block position-absolute">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ximsa-it-slider-item">
+						<div class="ximsa-it-team-item position-relative">
+							<div class="inner-img">
+								<img src="assets/img/it-solution-2/team/tm1.png" alt="">
+							</div>
+							<div class="inner-text xis-it-main-headline text-uppercase text-center pera-content">
+								<h3><a href="#">Guy Hawkins</a></h3>
+								<p>Ux Designer</p>
+							</div>
+							<div class="social-mail-wrap d-flex justify-content-between position-relative">
+								<div class="ximsa-it-mail">
+									<a href="#"><i class="fas fa-envelope"></i></a>
+								</div>
+								<div class="ximsa-it-share postion-relative">
+									<button><i class="fas fa-share-alt"></i></button>
+									<div class="ximsa-it-share-icon ul-li-block position-absolute">
+										<ul>
+											<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+											<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+											<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel_nav text-right ">
+					<button type="button" class="xism-it-team-left_arrow"><i class="fas fa-arrow-left"></i></button>
+					<button type="button" class="xism-it-team-right_arrow"><i class="fas fa-arrow-right"></i></button>
+				</div>
+			</div>
+			<div class="xism-join-team-text pera-content text-center">
+				<p>We'll ensure you always get the best results : <a href="#"> Join Our Team  <i class="fas fa-arrow-right"></i></a></p>
+			</div>
+		</div>
+	</section>
+<!-- End of Team section
+	============================================= -->
+
+<!-- Start of testimonial section
+	============================================= -->
+	<section id="ximsa-it-testimonial" class="ximsa-it-testimonial-section">
+		<div class="ximsa-it-testimonial-content position-relative">
+			<div class="container">
+				<div class="ximsa-it-section-title text-center xis-it-main-headline pera-content wow fadeFromUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+					<h2 class="text-uppercase">What They’re Talking?</h2>
+				</div>
+				<div class="ximsa-it-testimonial-slider-area  position-relative">
+					<div class="ximsa-it-testimonial-slider">
+						<div class="ximsa-it-testimonial-item text-center">
+							<div class="inner-author-wrap">
+								<div class="author-img">
+									<img src="assets/img/it-solution-2/about/tst1.png" alt="">
+								</div>
+								<div class="author-rate ul-li">
+									<ul>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+									</ul>
+								</div>
+								<div class="author-name">
+									Alextina Ditarson  (Agon)
+								</div>
+								<div class="inner-text">
+									Ximsa is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.
+								</div>
+							</div>
+						</div>
+						<div class="ximsa-it-testimonial-item text-center">
+							<div class="inner-author-wrap">
+								<div class="author-img">
+									<img src="assets/img/it-solution-2/about/tst1.png" alt="">
+								</div>
+								<div class="author-rate ul-li">
+									<ul>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+									</ul>
+								</div>
+								<div class="author-name">
+									Alextina Ditarson  (Agon)
+								</div>
+								<div class="inner-text">
+									Ximsa is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.
+								</div>
+							</div>
+						</div>
+						<div class="ximsa-it-testimonial-item text-center">
+							<div class="inner-author-wrap">
+								<div class="author-img">
+									<img src="assets/img/it-solution-2/about/tst1.png" alt="">
+								</div>
+								<div class="author-rate ul-li">
+									<ul>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+										<li><i class="fas fa-star"></i></li>
+									</ul>
+								</div>
+								<div class="author-name">
+									Alextina Ditarson  (Agon)
+								</div>
+								<div class="inner-text">
+									Ximsa is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Ens of Testimonial section
+	============================================= -->
+
+<!-- Start of Sponsor section
+	============================================= -->
+	<section id="ximsa-it-sponsor" class="ximsa-it-sponsor-section">
+		<div class="container">
+			<div class="ximsa-it-sponsor-slider-wrap">
+				<div class="ximsa-it-sponsor-slider">
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp1.png" alt="">
+					</div>
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp2.png" alt="">
+					</div>
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp3.png" alt="">
+					</div>
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp4.png" alt="">
+					</div>
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp5.png" alt="">
+					</div>
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp1.png" alt="">
+					</div>
+					<div class="ximsa-it-sponsor-item">
+						<img src="assets/img/it-solution-2/sponsor/sp2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>								
+<!-- End of Sponsor section
+	============================================= -->
+
+<!-- Start of Blog section
+	============================================= -->
+	<section id="ximsa-it-blog" class="ximsa-it-blog-section">
+		<div class="container">
+			<div class="ximsa-it-blog-top-content d-flex justify-content-between align-items-center">
+				<div class="ximsa-it-section-title xis-it-main-headline pera-content">
+					<h2 class="text-uppercase">Latest News & Blog</h2>
+				</div>
+				<div class="carousel_nav text-right ">
+					<button type="button" class="xism-it-blog-left_arrow"><i class="fas fa-arrow-left"></i></button>
+					<button type="button" class="xism-it-blog-right_arrow"><i class="fas fa-arrow-right"></i></button>
+				</div>
+			</div>
+			<div class="ximsa-it-blog-slider-wrap">
+				<div class="ximsa-it-blog-slider">
+					<div class="ximsa-it-slider-item">
+						<div class="ximsa-it-blog-item">
+							<div class="inner-img position-relative">
+								<img src="assets/img/it-solution-2/blog/blg1.png" alt="">
+								<span class="blog-category text-uppercase position-absolute">Business</span>
+							</div>
+							<div class="inner-text xis-it-main-headline pera-content">
+								<h3><a href="#">Challange Yourself And Winthe Bright Future.</a></h3>
+								<p>These cases are perfectly simple nguish.These cases are perfectly..</p>
+								<div class="blog-meta text-uppercase">
+									<a href="#"><i class="fas fa-clock"></i> Dec 28, 2023
+										<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"></a>
+										<a href="#"><i class="fas fa-eye"></i> 1,526 views</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ximsa-it-slider-item">
+							<div class="ximsa-it-blog-item">
+								<div class="inner-img position-relative">
+									<img src="assets/img/it-solution-2/blog/blg2.png" alt="">
+									<span class="blog-category text-uppercase position-absolute">Business</span>
+								</div>
+								<div class="inner-text xis-it-main-headline pera-content">
+									<h3><a href="#">Challange Yourself And Winthe Bright Future.</a></h3>
+									<p>These cases are perfectly simple nguish.These cases are perfectly..</p>
+									<div class="blog-meta text-uppercase">
+										<a href="#"><i class="fas fa-clock"></i> Dec 28, 2023
+											<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"></a>
+											<a href="#"><i class="fas fa-eye"></i> 1,526 views</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ximsa-it-slider-item">
+								<div class="ximsa-it-blog-item">
+									<div class="inner-img position-relative">
+										<img src="assets/img/it-solution-2/blog/blg3.png" alt="">
+										<span class="blog-category text-uppercase position-absolute">Business</span>
+									</div>
+									<div class="inner-text xis-it-main-headline pera-content">
+										<h3><a href="#">Challange Yourself And Winthe Bright Future.</a></h3>
+										<p>These cases are perfectly simple nguish.These cases are perfectly..</p>
+										<div class="blog-meta text-uppercase">
+											<a href="#"><i class="fas fa-clock"></i> Dec 28, 2023
+												<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"></a>
+												<a href="#"><i class="fas fa-eye"></i> 1,526 views</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ximsa-it-slider-item">
+									<div class="ximsa-it-blog-item">
+										<div class="inner-img position-relative">
+											<img src="assets/img/it-solution-2/blog/blg1.png" alt="">
+											<span class="blog-category text-uppercase position-absolute">Business</span>
+										</div>
+										<div class="inner-text xis-it-main-headline pera-content">
+											<h3><a href="#">Challange Yourself And Winthe Bright Future.</a></h3>
+											<p>These cases are perfectly simple nguish.These cases are perfectly..</p>
+											<div class="blog-meta text-uppercase">
+												<a href="#"><i class="fas fa-clock"></i> Dec 28, 2023
+													<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"></a>
+													<a href="#"><i class="fas fa-eye"></i> 1,526 views</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="ximsa-it-slider-item">
+										<div class="ximsa-it-blog-item">
+											<div class="inner-img position-relative">
+												<img src="assets/img/it-solution-2/blog/blg2.png" alt="">
+												<span class="blog-category text-uppercase position-absolute">Business</span>
+											</div>
+											<div class="inner-text xis-it-main-headline pera-content">
+												<h3><a href="#">Challange Yourself And Winthe Bright Future.</a></h3>
+												<p>These cases are perfectly simple nguish.These cases are perfectly..</p>
+												<div class="blog-meta text-uppercase">
+													<a href="#"><i class="fas fa-clock"></i> Dec 28, 2023
+														<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"></a>
+														<a href="#"><i class="fas fa-eye"></i> 1,526 views</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>		
+<!-- End of Blog section
+	============================================= -->
+
+<!-- Start of Footer section
+	============================================= -->
+	<section id="ximsa-it-footer" class="ximsa-it-footer-section">
+		<div class="ximsa-it-footer-newslatter" data-background="assets/img/it-solution-2/banner/banner-bg.jpg">
+			<div class="container">
+				<div class="ximsa-it-footer-newslatter-area d-flex justify-content-between align-items-center">
+					<div class="ximsa-it-section-title xis-it-main-headline pera-content">
+						<h2 class="text-uppercase">Subscribe Newsletters</h2>
+					</div>
+					<div class="newslatter-form">
+						<form action="#" method="get">
+							<input type="email" name="email" placeholder="Subscribe Now">
+							<button type="submit">Subcribe Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ximsa-it-footer-widget-wrapper">
+			<div class="container">
+				<div class="ximsa-it-footer-widget-content d-flex justify-content-between">
+					<div class="ximsa-it-footer-widget ul-li-block xis-it-main-headline">
+						<h3 class="widget-title text-uppercase">Our Location</h3>
+						<ul>
+							<li><a href="#">London</a></li>
+							<li><a href="#">America</a></li>
+							<li><a href="#">Constarica</a></li>
+							<li><a href="#">Germany</a></li>
+							<li><a href="#">India</a></li>
+						</ul>
+					</div>
+					<div class="ximsa-it-footer-widget ul-li-block xis-it-main-headline">
+						<h3 class="widget-title text-uppercase">Our Location</h3>
+						<ul>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Mobile Development</a></li>
+							<li><a href="#">On-Demand Apps</a></li>
+							<li><a href="#">Dedicated Team</a></li>
+							<li><a href="#">iOS & Android</a></li>
+						</ul>
+					</div>
+					<div class="ximsa-it-footer-widget ul-li-block xis-it-main-headline">
+						<h3 class="widget-title text-uppercase">Quick Links</h3>
+						<ul>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Faq</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Service</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="ximsa-it-footer-widget ul-li-block xis-it-main-headline">
+						<h3 class="widget-title text-uppercase">Learn Fact</h3>
+						<ul>
+							<li><a href="#">Social Media Platform</a></li>
+							<li><a href="#">Business Management Tools</a></li>
+							<li><a href="#">Gambling & Betting Web Apps</a></li>
+							<li><a href="#">Sports and Fitness App</a></li>
+							<li><a href="#">Software as a Service (SaaS)</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="ximsa-it-footer-copyright">
+				<div class="container">
+					<div class="ximsa-it-footer-copyright-content d-flex justify-content-between">
+						<div class="copyright-text">
+							© Copyrights, 2023 SaaSio. All Right Recived
+						</div>
+						<div class="copyright-menu ul-li">
+							<ul>
+								<li><a href="#">Terms and conditions</a></li>
+								<li><a href="#"> Privacy policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>		
+<!-- End of Footer section
+	============================================= -->	
+
+
+	<!-- For Js Library -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/appear-2.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/countdown.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/side-demo.js"></script>
+	<script src="assets/js/it-solution-2.js"></script>
+</body>
+</html>			
