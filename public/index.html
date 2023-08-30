@@ -186,10 +186,30 @@
                 data-wow-delay="200ms"
                 data-wow-duration="1500ms"
               >
+                <!-- <div
+                  class="ximsa-about-title text-uppercase xis-it-main-headline d-flex justify-content-center align-items-center position-relative"
+                  data-background="cover.jpeg"
+                > -->
                 <div
                   class="ximsa-about-title text-uppercase xis-it-main-headline d-flex justify-content-center align-items-center position-relative"
-                  data-background="assets/img/it-solution-2/about/ab1.png"
+                  id="custom-div"
                 >
+
+                <style>
+                  /* Use cover1.jpeg for screens with a max width of 768px */
+                  @media (max-width: 768px) {
+                    #custom-div {
+                      background-image: url('cover1.jpeg');
+                    }
+                  }
+                  
+                  /* Use cover.jpeg for screens with a width greater than 768px */
+                  @media (min-width: 769px) {
+                    #custom-div {
+                      background-image: url('cover.jpeg');
+                    }
+                  }
+                  </style>
                   <h2>About Us <i class="fas fa-angle-right"></i></h2>
                 </div>
               </div>
